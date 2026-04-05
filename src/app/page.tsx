@@ -3,6 +3,8 @@ import path from "path";
 import DailyNFLPuzzle from "@/components/DailyNFLPuzzle";
 import type { PuzzleData, PlayerEntry } from "@/data/day1";
 
+export const dynamic = "force-dynamic";
+
 const PUZZLES_DIR = path.join(process.cwd(), "src/data/puzzles");
 
 /**
