@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "San Francisco 49ers Teammate",
       "players": [
-        "Fred Warner",
-        "Trent Williams"
+        "Arik Armstead",
+        "Fred Warner"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Award: Defensive Rookie of the Year",
       "players": [
-        "Ndamukong Suh",
-        "Micah Parsons"
+        "Luke Kuechly",
+        "Joey Bosa"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#2 Overall)",
       "players": [
-        "Ronnie Brown",
-        "Chris Long"
+        "C.J. Stroud",
+        "Aidan Hutchinson"
       ]
     }
   }

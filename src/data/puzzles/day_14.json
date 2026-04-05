@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "New York Jets Teammate",
+      "hint": "Draft Class: 2013 Round 2",
       "players": [
-        "Sheldon Richardson",
-        "Demario Davis"
+        "Darius Slay",
+        "Lane Johnson"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "College: West Virginia",
+      "hint": "Seattle Seahawks Teammate",
       "players": [
-        "Mark Glowinski",
-        "David Sills"
+        "Russell Wilson",
+        "Nick Bellore"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Comeback Player of the Year",
+      "hint": "Drafted by New York Jets",
       "players": [
-        "Keenan Allen",
-        "Alex Smith"
+        "Leonard Williams",
+        "Demario Davis"
       ]
     }
   }

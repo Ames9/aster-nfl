@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2015",
+      "hint": "College: Alabama",
       "players": [
-        "Todd Gurley",
-        "Marcus Mariota"
+        "Josh Jacobs",
+        "James Carpenter"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "College: Alabama",
+      "hint": "Las Vegas Raiders Teammate",
       "players": [
-        "C.J. Mosley",
-        "Julio Jones"
+        "Latavius Murray",
+        "Antonio Hamilton"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Dallas Cowboys Teammate",
+      "hint": "1st Round Pick (#4 Overall)",
       "players": [
-        "Dak Prescott",
-        "CeeDee Lamb"
+        "Philip Rivers",
+        "A.J. Green"
       ]
     }
   }

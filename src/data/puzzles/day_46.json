@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Detroit Lions Teammate",
       "players": [
-        "Ndamukong Suh",
-        "Matt Prater"
+        "Matt Prater",
+        "Nick Bellore"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "College: Georgia",
       "players": [
-        "David Andrews",
-        "Geno Atkins"
+        "Leonard Floyd",
+        "Justin Houston"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Comeback Player of the Year",
+      "hint": "1st Round Pick (#1 Overall)",
       "players": [
-        "Drew Brees",
-        "Keenan Allen"
+        "Baker Mayfield",
+        "Cam Newton"
       ]
     }
   }

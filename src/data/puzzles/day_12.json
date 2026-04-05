@@ -16,15 +16,15 @@
       "colorCode": "#ff6b6b",
       "hint": "Los Angeles Rams Teammate",
       "players": [
-        "Johnny Hekker",
-        "Jared Goff"
+        "Jared Goff",
+        "Robert Woods"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Award: Offensive Player of the Year",
       "players": [
-        "Patrick Mahomes",
+        "Michael Thomas",
         "Justin Jefferson"
       ]
     },
@@ -32,8 +32,8 @@
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#10 Overall)",
       "players": [
-        "Tyson Alualu",
-        "Eric Ebron"
+        "Stephon Gilmore",
+        "Josh Rosen"
       ]
     }
   }

@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Round: 3",
+      "hint": "San Francisco 49ers Teammate",
       "players": [
-        "Tyler Lockett",
-        "Danielle Hunter"
+        "Nick Bosa",
+        "Dre Greenlaw"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "San Francisco 49ers Teammate",
+      "hint": "Draft Class: 2018 Round 3",
       "players": [
-        "George Kittle",
-        "Richard Sherman"
+        "Justin Reid",
+        "Mark Andrews"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Brigham Young",
+      "hint": "College: BYU",
       "players": [
-        "Michael Davis",
-        "Ezekiel Ansah"
+        "Zach Wilson",
+        "Taysom Hill"
       ]
     }
   }

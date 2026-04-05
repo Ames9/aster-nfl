@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Dallas Cowboys Teammate",
       "players": [
-        "Joe Thomas",
-        "Ezekiel Elliott"
+        "Amari Cooper",
+        "Jason Witten"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Award: Walter Payton Man of the Year",
+      "hint": "Draft Class: 2016 Round 4",
       "players": [
-        "Drew Brees",
-        "Russell Wilson"
+        "Tyler Higbee",
+        "Joe Schobert"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Offensive Rookie of the Year",
+      "hint": "Award: Walter Payton Man of the Year",
       "players": [
-        "Adrian Peterson",
-        "Matt Ryan"
+        "Drew Brees",
+        "Larry Fitzgerald"
       ]
     }
   }

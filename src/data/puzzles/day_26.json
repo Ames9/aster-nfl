@@ -14,25 +14,25 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2014",
+      "hint": "Las Vegas Raiders Teammate",
       "players": [
-        "Ryan Shazier",
-        "Jadeveon Clowney"
+        "Jon Feliciano",
+        "Shelby Harris"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Chicago Bears Teammate",
+      "hint": "College: Buffalo",
       "players": [
-        "Chase Daniel",
-        "Patrick Scales"
+        "Josh Thomas",
+        "Tyree Jackson"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#5 Overall)",
       "players": [
-        "Bradley Chubb",
+        "Devin White",
         "Tua Tagovailoa"
       ]
     }

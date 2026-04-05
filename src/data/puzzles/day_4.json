@@ -14,9 +14,9 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2012",
+      "hint": "Draft Class: 2012, Round 1",
       "players": [
-        "Dontari Poe",
+        "Andrew Luck",
         "Robert Griffin"
       ]
     },
@@ -24,7 +24,7 @@
       "colorCode": "#2ecc71",
       "hint": "New England Patriots Teammate",
       "players": [
-        "Marcus Cannon",
+        "J.C. Jackson",
         "Rob Gronkowski"
       ]
     },
@@ -32,8 +32,8 @@
       "colorCode": "#3498db",
       "hint": "College: South Carolina",
       "players": [
-        "Johnathan Joseph",
-        "Brandon Shell"
+        "Deebo Samuel",
+        "Jadeveon Clowney"
       ]
     }
   }

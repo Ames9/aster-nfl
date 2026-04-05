@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2013",
+      "hint": "Draft Class: 2013 Round 2",
       "players": [
-        "Ezekiel Ansah",
-        "EJ Manuel"
+        "Zach Ertz",
+        "Brandon McManus"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Pittsburgh Steelers Teammate",
       "players": [
-        "Javon Hargrave",
-        "T.J. Watt"
+        "Chris Boswell",
+        "Joe Haden"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "College: Michigan State",
       "players": [
-        "Brian Hoyer",
-        "Domata Peko"
+        "Matt Sokol",
+        "Jack Conklin"
       ]
     }
   }

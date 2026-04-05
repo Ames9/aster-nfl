@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Round: 2",
+      "hint": "Tennessee Titans Teammate",
       "players": [
-        "Bobby Wagner",
-        "C.J. Mosley"
+        "Rodger Saffold",
+        "Ryan Tannehill"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Tennessee Titans Teammate",
+      "hint": "College: Alabama",
       "players": [
-        "A.J. Brown",
-        "Marcus Mariota"
+        "Julio Jones",
+        "Jonathan Allen"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Award: Heisman Trophy",
       "players": [
-        "Lamar Jackson",
-        "Jameis Winston"
+        "Mark Ingram",
+        "DeVonta Smith"
       ]
     }
   }

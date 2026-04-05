@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Minnesota Vikings Teammate",
       "players": [
-        "Justin Jefferson",
-        "Eric Kendricks"
+        "Adrian Peterson",
+        "Kirk Cousins"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "College: Notre Dame",
       "players": [
-        "Matthias Farley",
-        "Mike McGlinchey"
+        "Ronnie Stanley",
+        "Jaylon Smith"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#29 Overall)",
       "players": [
-        "Phillip Dorsett",
-        "Taven Bryan"
+        "Eric Stokes",
+        "Bryan Bresee"
       ]
     }
   }

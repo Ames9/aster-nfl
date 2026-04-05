@@ -17,23 +17,23 @@
       "hint": "Minnesota Vikings Teammate",
       "players": [
         "Patrick Peterson",
-        "Anthony Barr"
+        "David Quessenberry"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Award: Offensive Player of the Year",
       "players": [
-        "Peyton Manning",
-        "Cam Newton"
+        "Christian McCaffrey",
+        "Patrick Mahomes"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#22 Overall)",
       "players": [
-        "Charles Harris",
-        "Percy Harvin"
+        "Felix Jones",
+        "Quay Walker"
       ]
     }
   }

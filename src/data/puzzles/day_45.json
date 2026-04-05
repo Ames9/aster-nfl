@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Pittsburgh Steelers Teammate",
       "players": [
-        "Chris Boswell",
-        "Le'Veon Bell"
+        "Joe Haden",
+        "Elandon Roberts"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "College: Wisconsin",
       "players": [
-        "Rob Havenstein",
-        "Ryan Ramczyk"
+        "Andrew Van Ginkel",
+        "Rob Havenstein"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#30 Overall)",
       "players": [
-        "Mike Hughes",
-        "Vernon Butler"
+        "Kenny Britt",
+        "Mike Hughes"
       ]
     }
   }

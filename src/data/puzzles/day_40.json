@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Round: 3",
+      "hint": "Los Angeles Chargers Teammate",
       "players": [
-        "Justin Houston",
-        "Demario Davis"
+        "Khalil Mack",
+        "Joey Bosa"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Los Angeles Chargers Teammate",
+      "hint": "Draft Class: 2013 Round 3",
       "players": [
-        "Joey Bosa",
-        "Josh Harris"
+        "Duron Harmon",
+        "Shawn Williams"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Award: Comeback Player of the Year",
       "players": [
-        "Ryan Tannehill",
-        "Peyton Manning"
+        "Drew Brees",
+        "Christian McCaffrey"
       ]
     }
   }

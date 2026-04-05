@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Drafted by New York Giants",
       "players": [
-        "Daniel Jones",
-        "Dalvin Tomlinson"
+        "Steve Smith",
+        "Dexter Lawrence"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "2021 Los Angeles Rams Teammate",
+      "hint": "Cleveland Browns Teammate",
       "players": [
-        "Robert Woods",
-        "Johnny Hekker"
+        "Myles Garrett",
+        "Kareem Hunt"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Award: Offensive Rookie of the Year",
       "players": [
-        "Kyler Murray",
-        "Saquon Barkley"
+        "Cam Newton",
+        "Ja'Marr Chase"
       ]
     }
   }

@@ -14,25 +14,25 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2014",
+      "hint": "Tampa Bay Buccaneers Teammate",
       "players": [
-        "Blake Bortles",
-        "Anthony Barr"
+        "DeSean Jackson",
+        "Ryan Fitzpatrick"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Drafted by Tampa Bay Buccaneers",
+      "hint": "College: Texas A&M",
       "players": [
-        "Vita Vea",
-        "Chris Godwin"
+        "De'Von Achane",
+        "Von Miller"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#7 Overall)",
       "players": [
-        "Darrius Heyward-Bey",
+        "Adrian Peterson",
         "Mark Barron"
       ]
     }

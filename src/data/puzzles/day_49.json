@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2015",
+      "hint": "Seattle Seahawks Teammate",
       "players": [
-        "Marcus Mariota",
-        "Vic Beasley"
+        "Bobby Wagner",
+        "DK Metcalf"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Seattle Seahawks Teammate",
+      "hint": "College: Kansas State",
       "players": [
-        "Marshawn Lynch",
-        "Leonard Williams"
+        "Byron Pringle",
+        "Reggie Walker"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Kansas State",
+      "hint": "Draft Class: 2015 Round 3",
       "players": [
-        "Reggie Walker",
-        "Darren Sproles"
+        "Jordan Hicks",
+        "Danielle Hunter"
       ]
     }
   }

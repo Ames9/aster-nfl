@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2019",
+      "hint": "Las Vegas Raiders Teammate",
       "players": [
-        "Devin White",
-        "Quinnen Williams"
+        "Sam Young",
+        "Brandon Bolden"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Las Vegas Raiders Teammate",
+      "hint": "Draft Class: 2019 Round 4",
       "players": [
-        "Chandler Jones",
-        "Johnathan Hankins"
+        "Greg Gaines",
+        "Gary Jennings"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "College: Eastern Michigan",
       "players": [
-        "Mathew Sexton",
-        "Jason Jones"
+        "Dylan Drummond",
+        "Andrew Wylie"
       ]
     }
   }

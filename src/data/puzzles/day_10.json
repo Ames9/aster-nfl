@@ -1,39 +1,39 @@
 {
-  "id": "day_10",
-  "date": "2026-04-14",
+  "id": "day_11",
+  "date": "2026-04-15",
   "answer": {
-    "name": "Antonio Brown",
-    "comment": "2010年代のNFLにおいて、他の追随を許さない圧倒的なスタッツを記録し続けたトップWR。フィールド外での騒動ばかりが目立ちますが、元々6順指名で、そこまで恵まれてはいない身体能力を努力でカバーしていた選手（元々おかしかったのではなく、PIT出てから急に色々出てきたのでCTEと言われるのも頷ける）。怪我にも強く、30になっても衰える気配がなかったので本当勿体無い。通算レシーブヤード5傑くらいまでは行けたはずです。",
-    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Antonio_Brown_%2854234155837%29_%28cropped%29.jpg/330px-Antonio_Brown_%2854234155837%29_%28cropped%29.jpg",
-    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Antonio_Brown",
-    "pfr_id": "BrowAn04",
-    "pfr_url": "https://www.pro-football-reference.com/players/B/BrowAn04.htm",
-    "espn_id": "13934",
-    "espn_url": "https://www.espn.com/nfl/player/_/id/13934"
+    "name": "Joe Flacco",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Joe_Flacco_2025_Browns_Camp_%28cropped%29.jpg/330px-Joe_Flacco_2025_Browns_Camp_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Joe_Flacco",
+    "pfr_id": "FlacJo00",
+    "pfr_url": "https://www.pro-football-reference.com/players/F/FlacJo00.htm",
+    "espn_id": "11252",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/11252"
   },
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2010",
+      "hint": "Baltimore Ravens Teammate",
       "players": [
-        "Eric Berry",
-        "Sam Bradford"
+        "C.J. Mosley",
+        "Ryan Jensen"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Drafted by Pittsburgh Steelers",
+      "hint": "Award: Super Bowl MVP",
       "players": [
-        "Kelvin Beachum",
-        "Ben Roethlisberger"
+        "Cooper Kupp",
+        "Aaron Rodgers"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Tampa Bay Buccaneers Teammate",
+      "hint": "Award: Comeback Player of the Year",
       "players": [
-        "Lavonte David",
-        "Garrison Sanborn"
+        "Joe Burrow",
+        "Christian McCaffrey"
       ]
     }
   }

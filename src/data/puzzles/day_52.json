@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2021",
+      "hint": "Dallas Cowboys Teammate",
       "players": [
-        "Trey Lance",
-        "Kyle Pitts"
+        "La'el Collins",
+        "Tyron Smith"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Dallas Cowboys Teammate",
+      "hint": "Award: Defensive Rookie of the Year",
       "players": [
-        "Brandin Cooks",
-        "La'el Collins"
+        "Julius Peppers",
+        "Terrell Suggs"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#12 Overall)",
       "players": [
-        "Odell Beckham",
-        "Danny Shelton"
+        "Danny Shelton",
+        "Marshawn Lynch"
       ]
     }
   }

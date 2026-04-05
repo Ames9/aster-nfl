@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "College: Penn State",
+      "hint": "New York Giants Teammate",
       "players": [
-        "DaQuan Jones",
-        "Sean Lee"
+        "Daniel Jones",
+        "Casey Kreiter"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "2024 Philadelphia Eagles Teammate",
+      "hint": "Award: Offensive Rookie of the Year",
       "players": [
-        "Jason Kelce",
-        "DeVonta Smith"
+        "Matt Ryan",
+        "Ja'Marr Chase"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Offensive Rookie of the Year",
+      "hint": "Award: Offensive Player of the Year",
       "players": [
-        "Cam Newton",
-        "Alvin Kamara"
+        "Adrian Peterson",
+        "Derrick Henry"
       ]
     }
   }

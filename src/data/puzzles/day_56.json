@@ -16,16 +16,16 @@
       "colorCode": "#ff6b6b",
       "hint": "Atlanta Falcons Teammate",
       "players": [
-        "Jake Matthews",
-        "Matt Ryan"
+        "Tony Gonzalez",
+        "Matt Schaub"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "College: Alabama",
       "players": [
-        "Mark Ingram",
-        "Marlon Humphrey"
+        "Jonathan Allen",
+        "C.J. Mosley"
       ]
     },
     "blue": {
@@ -33,7 +33,7 @@
       "hint": "1st Round Pick (#6 Overall)",
       "players": [
         "Morris Claiborne",
-        "Barkevious Mingo"
+        "Vernon Davis"
       ]
     }
   }

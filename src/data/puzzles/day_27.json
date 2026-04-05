@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Round: 3",
+      "hint": "New Orleans Saints Teammate",
       "players": [
-        "Fred Warner",
-        "Tyler Lockett"
+        "Trey Hendrickson",
+        "Derek Carr"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "New Orleans Saints Teammate",
+      "hint": "College: Tennessee",
       "players": [
-        "Malcolm Jenkins",
-        "Jameis Winston"
+        "Malik Jackson",
+        "Michael Palardy"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Offensive Rookie of the Year",
+      "hint": "Draft Class: 2017 Round 3",
       "players": [
-        "Ben Roethlisberger",
-        "Ja'Marr Chase"
+        "Chris Godwin",
+        "Kareem Hunt"
       ]
     }
   }

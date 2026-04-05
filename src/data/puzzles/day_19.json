@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "New York Jets Teammate",
+      "hint": "Green Bay Packers Teammate",
       "players": [
-        "Chuck Clark",
-        "Thomas Hennessy"
+        "Davante Adams",
+        "Za'Darius Smith"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Award: Super Bowl MVP",
       "players": [
-        "Tom Brady",
+        "Julian Edelman",
         "Drew Brees"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "1st Round Pick (#24 Overall)",
+      "hint": "Award: MVP",
       "players": [
-        "Johnathan Joseph",
-        "D.J. Moore"
+        "Matt Ryan",
+        "Adrian Peterson"
       ]
     }
   }

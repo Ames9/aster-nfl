@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2016",
+      "hint": "Drafted by Kansas City Chiefs",
       "players": [
-        "Jalen Ramsey",
-        "Carson Wentz"
+        "Kareem Hunt",
+        "Rodney Hudson"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Kansas City Chiefs Teammate",
+      "hint": "Miami Dolphins Teammate",
       "players": [
-        "Mike Pennel",
-        "Patrick Mahomes"
+        "Aaron Brewer",
+        "Raheem Mostert"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: West Alabama",
+      "hint": "Draft Class: 2016 Round 5",
       "players": [
-        "Malcolm Butler",
-        "Seth Roberts"
+        "LeShaun Sims",
+        "Rashard Higgins"
       ]
     }
   }

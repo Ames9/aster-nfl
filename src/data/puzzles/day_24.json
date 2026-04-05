@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2014",
+      "hint": "Drafted by Green Bay Packers",
       "players": [
-        "Jadeveon Clowney",
-        "Mike Evans"
+        "Chris Johnson",
+        "Corey Linsley"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Drafted by Green Bay Packers",
+      "hint": "Las Vegas Raiders Teammate",
       "players": [
-        "Chris Johnson",
-        "Randall Cobb"
+        "Maxx Crosby",
+        "Brandon Parker"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Las Vegas Raiders Teammate",
+      "hint": "College: Fresno State",
       "players": [
-        "Brandon Bolden",
-        "Kolton Miller"
+        "Cody Wichmann",
+        "Charles Washington"
       ]
     }
   }

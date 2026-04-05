@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Round: 3",
+      "hint": "Drafted by Arizona Cardinals",
       "players": [
-        "Alvin Kamara",
-        "Russell Wilson"
+        "Patrick Peterson",
+        "Larry Fitzgerald"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Drafted by Arizona Cardinals",
+      "hint": "New Orleans Saints Teammate",
       "players": [
-        "Calais Campbell",
-        "D.J. Humphries"
+        "Demario Davis",
+        "James Hurst"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Kansas City Chiefs Teammate",
+      "hint": "College: LSU",
       "players": [
-        "Damien Williams",
-        "Eric Fisher"
+        "Justin Jefferson",
+        "Ja'Marr Chase"
       ]
     }
   }

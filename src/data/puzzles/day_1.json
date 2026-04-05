@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "New Orleans Saints Teammate",
       "players": [
-        "Trey Hendrickson",
-        "Jameis Winston"
+        "Mark Ingram",
+        "Brandin Cooks"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Drafted by Los Angeles Chargers",
+      "hint": "Award: Walter Payton Man of the Year",
       "players": [
-        "Eli Manning",
-        "Eric Weddle"
+        "Larry Fitzgerald",
+        "Peyton Manning"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Walter Payton Man of the Year",
+      "hint": "Award: Offensive Player of the Year",
       "players": [
-        "Peyton Manning",
-        "J.J. Watt"
+        "Cam Newton",
+        "Saquon Barkley"
       ]
     }
   }

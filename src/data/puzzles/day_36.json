@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2020",
+      "hint": "Cincinnati Bengals Teammate",
       "players": [
-        "Isaiah Simmons",
-        "C.J. Henderson"
+        "Ted Karras",
+        "Jessie Bates"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Cincinnati Bengals Teammate",
+      "hint": "Award: Heisman Trophy",
       "players": [
-        "Ted Karras",
-        "Germaine Pratt"
+        "Cam Newton",
+        "Lamar Jackson"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Comeback Player of the Year",
+      "hint": "1st Round Pick (#1 Overall)",
       "players": [
-        "Joe Flacco",
-        "Tom Brady"
+        "Matthew Stafford",
+        "Peyton Manning"
       ]
     }
   }

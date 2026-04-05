@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2012",
+      "hint": "Minnesota Vikings Teammate",
       "players": [
-        "Stephon Gilmore",
-        "Mark Barron"
+        "Eric Kendricks",
+        "Adam Thielen"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Washington Commanders Teammate",
+      "hint": "College: Michigan State",
       "players": [
-        "Ty Nsekhe",
-        "Ryan Kerrigan"
+        "Kenneth Walker III",
+        "Le'Veon Bell"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Michigan State",
+      "hint": "Draft Class: 2012",
       "players": [
-        "Le'Veon Bell",
-        "Taybor Pepper"
+        "Robert Griffin III",
+        "Alfred Morris"
       ]
     }
   }

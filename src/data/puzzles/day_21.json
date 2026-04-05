@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2011",
+      "hint": "Drafted by Seattle Seahawks",
       "players": [
-        "Jake Locker",
-        "Patrick Peterson"
+        "Mark Glowinski",
+        "Tyler Lockett"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Drafted by Seattle Seahawks",
+      "hint": "San Francisco 49ers Teammate",
       "players": [
-        "Earl Thomas",
-        "K.J. Wright"
+        "Nick Bosa",
+        "George Kittle"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "San Francisco 49ers Teammate",
+      "hint": "College: Stanford",
       "players": [
-        "Kyle Nelson",
-        "Deebo Samuel"
+        "Zach Ertz",
+        "Andrew Luck"
       ]
     }
   }

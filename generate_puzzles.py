@@ -533,14 +533,10 @@ def build_criteria(
 
     # ---- Draft Year ----
     entry_year = latest.get("entry_year")
-    if pd.notna(entry_year):
-        yr = int(entry_year)
-        criteria.append({"type": "draft_year", "label": f"Draft Class: {yr}", "value": yr})
-
-    # ---- Draft Round (1〜3 のみ) ----
-    # 1巡: 全体指名順位が判明している場合は draft_pick_exact 型にする
-    #       → ヒント選手も「同じ全体順位で指名された選手」に限定できる
-    # 2〜3巡: draft_round 型（"Draft Round: 2" など）でまとめる
+    # ---- Draft criteria ----
+    # 1巡 + 全体順位あり → draft_pick_exact（最も具体的・ヒント選手も同順位の選手）
+    # 1巡 + 順位なし / 2〜7巡 → draft_year_round 複合型（"Draft Class: YYYY Round N"）
+    # UDFA（draft_round なし）→ udfa 型（年不問でひとまとめ）
     dr = latest.get("draft_round")
     if pd.notna(dr):
         rd = int(dr)
@@ -548,13 +544,32 @@ def build_criteria(
             pk = latest.get("draft_pick_number")
             if pd.notna(pk):
                 pk_int = int(pk)
-                label = f"1st Round Pick (#{pk_int} Overall)"
-                criteria.append({"type": "draft_pick_exact", "label": label, "value": pk_int})
-            else:
-                criteria.append({"type": "draft_round", "label": "Draft Round: 1", "value": 1})
-        elif rd in (2, 3):
-            label = f"Draft Round: {rd}"
-            criteria.append({"type": "draft_round", "label": label, "value": rd})
+                criteria.append({
+                    "type": "draft_pick_exact",
+                    "label": f"1st Round Pick (#{pk_int} Overall)",
+                    "value": pk_int,
+                })
+            elif pd.notna(entry_year):
+                yr = int(entry_year)
+                criteria.append({
+                    "type": "draft_year_round",
+                    "label": f"Draft Class: {yr} Round 1",
+                    "value": {"year": yr, "round": 1},
+                })
+        elif 2 <= rd <= 7 and pd.notna(entry_year):
+            yr = int(entry_year)
+            criteria.append({
+                "type": "draft_year_round",
+                "label": f"Draft Class: {yr} Round {rd}",
+                "value": {"year": yr, "round": rd},
+            })
+    elif pd.notna(entry_year):
+        # ドラフト指名なし = UDFA（年不問でひとまとめ）
+        criteria.append({
+            "type": "udfa",
+            "label": "Undrafted Free Agent (UDFA)",
+            "value": None,
+        })
 
     # ---- Draft Club ----
     dc = str(latest.get("draft_club_c", "")).strip()
@@ -626,11 +641,22 @@ def players_matching(
     elif ctype == "position":
         matched = pr[pr["position"].str.upper() == val]["player_name"].unique()
 
-    elif ctype == "draft_year":
-        matched = pr[pr["entry_year"] == val]["player_name"].unique()
+    elif ctype == "draft_year_round":
+        # 複合型: 年 + ラウンドの AND 条件
+        yr, rd = val["year"], val["round"]
+        if "draft_round" in pr.columns:
+            matched = pr[
+                (pr["entry_year"] == yr) & (pr["draft_round"] == rd)
+            ]["player_name"].unique()
+        else:
+            matched = pr[pr["entry_year"] == yr]["player_name"].unique()
 
-    elif ctype == "draft_round":
-        matched = pr[pr["draft_round"] == val]["player_name"].unique() if "draft_round" in pr.columns else []
+    elif ctype == "udfa":
+        # 年不問でアンドラフト選手全員
+        if "draft_round" in pr.columns:
+            matched = pr[pr["draft_round"].isna()]["player_name"].unique()
+        else:
+            matched = []
 
     elif ctype == "draft_pick_exact":
         # 1巡の同じ全体指名順位の選手（例: #6 Overall → 歴代の全体6位指名選手）
@@ -743,12 +769,8 @@ def pick_hints(
 
     ctype = criterion["type"]
 
-    if ctype == "draft_year":
-        # 同ドラフトクラス内は指名順位（pick番号）昇順 = 上位指名を優先
-        ranked = sorted(
-            matched,
-            key=lambda p: draft_picks_n.get(p, 9999),
-        )
+    if False:
+        pass  # 将来の分岐用プレースホルダー
 
     else:
         # college / draft_round / draft_pick_exact / team_played / teammate / award など

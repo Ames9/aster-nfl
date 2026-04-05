@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Drafted by Buffalo Bills",
       "players": [
-        "Tre'Davious White",
-        "Kyle Williams"
+        "Kyle Williams",
+        "Stephon Gilmore"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Jacksonville Jaguars Teammate",
       "players": [
-        "Marcell Dareus",
-        "Marvin Jones"
+        "Marvin Jones",
+        "Roy Robertson-Harris"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "College: Wyoming",
       "players": [
-        "Tanner Gentry",
-        "Jacob Hollister"
+        "Chase Roullier",
+        "Carl Granderson"
       ]
     }
   }

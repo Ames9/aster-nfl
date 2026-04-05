@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Round: 2",
+      "hint": "Washington Commanders Teammate",
       "players": [
-        "C.J. Mosley",
-        "Lavonte David"
+        "Marcus Mariota",
+        "Terry McLaurin"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Seattle Seahawks Teammate",
+      "hint": "College: Utah State",
       "players": [
-        "Richard Sherman",
-        "Tyler Lockett"
+        "Jordan Love",
+        "Deven Thompkins"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Award: Walter Payton Man of the Year",
       "players": [
-        "Russell Wilson",
-        "Larry Fitzgerald"
+        "Cameron Heyward",
+        "Russell Wilson"
       ]
     }
   }

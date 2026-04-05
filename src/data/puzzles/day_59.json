@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2013",
+      "hint": "Undrafted Free Agent (UDFA)",
       "players": [
-        "Dion Jordan",
-        "Barkevious Mingo"
+        "Nick Bellore",
+        "Case Keenum"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Carolina Panthers Teammate",
       "players": [
-        "Andy Dalton",
+        "Johnny Hekker",
         "Taylor Moton"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Minn. State-Mankato",
+      "hint": "College: Minnesota State",
       "players": [
-        "Chris Reed",
-        "Shane Zylstra"
+        "Shane Zylstra",
+        "Aaron Rodgers"
       ]
     }
   }

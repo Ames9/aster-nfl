@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Dallas Cowboys Teammate",
       "players": [
-        "Amari Cooper",
-        "Joe Thomas"
+        "Joe Thomas",
+        "Tyron Smith"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "College: Ohio State",
       "players": [
-        "Corey Linsley",
-        "Michael Thomas"
+        "Malcolm Jenkins",
+        "Cameron Heyward"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#4 Overall)",
       "players": [
-        "Clelin Ferrell",
-        "Philip Rivers"
+        "Philip Rivers",
+        "Darren McFadden"
       ]
     }
   }

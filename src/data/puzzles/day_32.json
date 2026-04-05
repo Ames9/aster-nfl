@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2018",
+      "hint": "Baltimore Ravens Teammate",
       "players": [
-        "Saquon Barkley",
-        "Denzel Ward"
+        "Marlon Humphrey",
+        "Calais Campbell"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Baltimore Ravens Teammate",
+      "hint": "Award: Heisman Trophy",
       "players": [
-        "Kevin Zeitler",
-        "Justin Houston"
+        "Kyler Murray",
+        "Jameis Winston"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Louisville",
+      "hint": "Award: MVP",
       "players": [
-        "Geron Christian",
-        "DeVante Parker"
+        "Cam Newton",
+        "Aaron Rodgers"
       ]
     }
   }

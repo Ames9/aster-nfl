@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "College: Stanford",
+      "hint": "Carolina Panthers Teammate",
       "players": [
-        "David DeCastro",
-        "Cameron Fleming"
+        "J.J. Jansen",
+        "Cam Newton"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "San Francisco 49ers Teammate",
+      "hint": "College: Stanford",
       "players": [
-        "Tashaun Gipson",
-        "Trent Williams"
+        "Andrew Luck",
+        "Bobby Okereke"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Comeback Player of the Year",
+      "hint": "Award: Offensive Player of the Year",
       "players": [
-        "Tom Brady",
-        "Joe Flacco"
+        "Cooper Kupp",
+        "Saquon Barkley"
       ]
     }
   }

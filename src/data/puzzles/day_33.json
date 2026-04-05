@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Drafted by Houston Texans",
       "players": [
-        "Ben Jones",
-        "Kareem Jackson"
+        "Brandon Brooks",
+        "Deshaun Watson"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "HST Teammate",
+      "hint": "Arizona Cardinals Teammate",
       "players": [
-        "Jadeveon Clowney",
-        "J.J. Watt"
+        "Kelvin Beachum",
+        "Chandler Jones"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#27 Overall)",
       "players": [
-        "Jordyn Brooks",
-        "Byron Jones"
+        "Byron Jones",
+        "Devin McCourty"
       ]
     }
   }

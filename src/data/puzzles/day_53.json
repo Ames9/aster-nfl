@@ -14,17 +14,17 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "College: Wisconsin",
+      "hint": "Drafted by Seattle Seahawks",
       "players": [
-        "J.J. Watt",
-        "Jonathan Taylor"
+        "Mark Glowinski",
+        "James Carpenter"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Denver Broncos Teammate",
       "players": [
-        "Garett Bolles",
+        "Tim Patrick",
         "Cameron Fleming"
       ]
     },
@@ -32,8 +32,8 @@
       "colorCode": "#3498db",
       "hint": "Award: Walter Payton Man of the Year",
       "players": [
-        "Larry Fitzgerald",
-        "Peyton Manning"
+        "Eli Manning",
+        "Dak Prescott"
       ]
     }
   }

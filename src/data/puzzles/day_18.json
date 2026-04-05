@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2010",
+      "hint": "Drafted by New England Patriots",
       "players": [
-        "Gerald McCoy",
-        "Tyson Alualu"
+        "Ted Karras",
+        "Devin McCourty"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Tampa Bay Buccaneers Teammate",
       "players": [
-        "Tom Brady",
-        "Ndamukong Suh"
+        "Vita Vea",
+        "Tom Brady"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "College: Arizona",
       "players": [
-        "Robert Golden",
-        "Earl Mitchell"
+        "Reggie Gilbert",
+        "Demetrius Flannigan-Fowles"
       ]
     }
   }

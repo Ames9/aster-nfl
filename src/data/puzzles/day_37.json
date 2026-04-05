@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2015",
+      "hint": "Buffalo Bills Teammate",
       "players": [
-        "Marcus Mariota",
-        "Amari Cooper"
+        "Cole Beasley",
+        "Von Miller"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Minnesota Vikings Teammate",
+      "hint": "College: Maryland",
       "players": [
-        "Linval Joseph",
-        "Harrison Smith"
+        "Torrey Smith",
+        "Josh Woods"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Maryland",
+      "hint": "Draft Class: 2015 Round 5",
       "players": [
-        "Quinton Jefferson",
-        "Yannick Ngakoue"
+        "Jay Ajayi",
+        "Lorenzo Doss"
       ]
     }
   }

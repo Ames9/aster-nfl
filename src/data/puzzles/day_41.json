@@ -14,18 +14,18 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2016",
+      "hint": "College: Florida State",
       "players": [
-        "Eli Apple",
-        "Sheldon Rankins"
+        "Anquan Boldin",
+        "Christian Jones"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Los Angeles Rams Teammate",
+      "hint": "Jacksonville Jaguars Teammate",
       "players": [
-        "Matthew Stafford",
-        "Clay Matthews"
+        "Tashaun Gipson",
+        "Tyler Shatley"
       ]
     },
     "blue": {
@@ -33,7 +33,7 @@
       "hint": "1st Round Pick (#5 Overall)",
       "players": [
         "Eric Berry",
-        "Bradley Chubb"
+        "Tua Tagovailoa"
       ]
     }
   }

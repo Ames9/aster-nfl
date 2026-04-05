@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2017",
+      "hint": "Cleveland Browns Teammate",
       "players": [
-        "Deshaun Watson",
-        "Jamal Adams"
+        "A.J. Green",
+        "Baker Mayfield"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Cleveland Browns Teammate",
+      "hint": "1st Round Pick (#1 Overall)",
       "players": [
-        "Charley Hughlett",
-        "A.J. Green"
+        "Eli Manning",
+        "Kyler Murray"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Award: Defensive Player of the Year",
       "players": [
-        "Nick Bosa",
-        "Terrell Suggs"
+        "Luke Kuechly",
+        "J.J. Watt"
       ]
     }
   }

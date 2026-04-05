@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Drafted by Denver Broncos",
+      "hint": "Buffalo Bills Teammate",
       "players": [
-        "Justin Simmons",
-        "Jay Cutler"
+        "Tre'Davious White",
+        "Stefon Diggs"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Buffalo Bills Teammate",
+      "hint": "Award: Defensive Rookie of the Year",
       "players": [
-        "Micah Hyde",
-        "Matt Milano"
+        "Terrell Suggs",
+        "Sheldon Richardson"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Award: Super Bowl MVP",
       "players": [
-        "Drew Brees",
-        "Jalen Hurts"
+        "Patrick Mahomes",
+        "Cooper Kupp"
       ]
     }
   }

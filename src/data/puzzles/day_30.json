@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2013",
+      "hint": "Kansas City Chiefs Teammate",
       "players": [
-        "Sheldon Richardson",
-        "D.J. Hayden"
+        "Mike Pennel",
+        "Marcus Peters"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Kansas City Chiefs Teammate",
+      "hint": "College: Cincinnati",
       "players": [
-        "Cairo Santos",
-        "Justin Houston"
+        "Connor Barwin",
+        "James Hudson"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Cincinnati",
+      "hint": "Draft Class: 2013 Round 3",
       "players": [
-        "Parker Ehinger",
-        "Jason Kelce"
+        "Shawn Williams",
+        "Brandon Williams"
       ]
     }
   }

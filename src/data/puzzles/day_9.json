@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2017",
+      "hint": "Pittsburgh Steelers Teammate",
       "players": [
-        "Solomon Thomas",
-        "Patrick Mahomes"
+        "Le'veon Bell",
+        "Antonio Brown"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Arizona Cardinals Teammate",
+      "hint": "College: Pittsburgh",
       "players": [
-        "Zach Ertz",
-        "J.J. Watt"
+        "Aaron Donald",
+        "Joe Flacco"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Pittsburgh",
+      "hint": "Draft Class: 2017, Round 3, RB",
       "players": [
-        "Jordan Whitehead",
-        "Jabaal Sheard"
+        "Alvin Kamara",
+        "Kareem Hunt"
       ]
     }
   }

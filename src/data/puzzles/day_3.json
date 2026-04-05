@@ -14,17 +14,17 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2021",
+      "hint": "5th overall pick",
       "players": [
-        "Justin Fields",
-        "Jaylen Waddle"
+        "Tua Tagovailoa",
+        "Kayvon Thibodeaux"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Cincinnati Bengals Teammate",
       "players": [
-        "Ted Karras",
+        "Tee Higgins",
         "Tyler Boyd"
       ]
     },
@@ -32,7 +32,7 @@
       "colorCode": "#3498db",
       "hint": "Award: Offensive Rookie of the Year",
       "players": [
-        "Anquan Boldin",
+        "Alvin Kamara",
         "Cam Newton"
       ]
     }

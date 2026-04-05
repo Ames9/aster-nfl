@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2017",
+      "hint": "San Francisco 49ers Teammate",
       "players": [
-        "Mitchell Trubisky",
-        "Marshon Lattimore"
+        "Christian McCaffrey",
+        "Kyle Juszczyk"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Drafted by San Francisco 49ers",
+      "hint": "College: Iowa",
       "players": [
-        "Deebo Samuel",
-        "Fred Warner"
+        "Sam Laporta",
+        "Tyler Linderbaum"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Iowa",
+      "hint": "Draft Class: 2017 Round 5",
       "players": [
-        "James Ferentz",
-        "Ben Niemann"
+        "Matt Milano",
+        "Aaron Jones"
       ]
     }
   }

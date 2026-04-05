@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2014",
+      "hint": "SL Teammate",
       "players": [
-        "Anthony Barr",
-        "Odell Beckham"
+        "Cody Davis",
+        "Janoris Jenkins"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Los Angeles Rams Teammate",
+      "hint": "Award: Defensive Rookie of the Year",
       "players": [
-        "Brandin Cooks",
-        "Leonard Floyd"
+        "Ndamukong Suh",
+        "Julius Peppers"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Defensive Player of the Year",
+      "hint": "1st Round Pick (#13 Overall)",
       "players": [
-        "Terrell Suggs",
-        "T.J. Watt"
+        "Sheldon Richardson",
+        "Tony Gonzalez"
       ]
     }
   }

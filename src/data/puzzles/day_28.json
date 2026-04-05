@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Los Angeles Rams Teammate",
+      "hint": "Drafted by LAR",
       "players": [
-        "Leonard Floyd",
-        "Johnny Hekker"
+        "Tyler Davis",
+        "David Edwards"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Award: Super Bowl MVP",
+      "hint": "2025 Seattle Seahawks Teammate",
       "players": [
-        "Eli Manning",
-        "Julian Edelman"
+        "Cody White",
+        "Sam Darnold"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Eastern Washington",
+      "hint": "Draft Class: 2017 Round 3",
       "players": [
-        "Jake Rodgers",
-        "Aaron Neary"
+        "Kareem Hunt",
+        "Alvin Kamara"
       ]
     }
   }
