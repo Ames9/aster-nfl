@@ -1,0 +1,40 @@
+{
+  "id": "day_45",
+  "date": "2026-05-19",
+  "answer": {
+    "name": "T.J. Watt",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T.J._Watt_%2851653079007%29_Cropped.jpg/330px-T.J._Watt_%2851653079007%29_Cropped.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/T._J._Watt",
+    "pfr_id": "WattT.00",
+    "pfr_url": "https://www.pro-football-reference.com/players/W/WattT.00.htm",
+    "espn_id": "3045282",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/3045282"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Pittsburgh Steelers Teammate",
+      "players": [
+        "Chris Boswell",
+        "Le'Veon Bell"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "College: Wisconsin",
+      "players": [
+        "Rob Havenstein",
+        "Ryan Ramczyk"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#30 Overall)",
+      "players": [
+        "Mike Hughes",
+        "Vernon Butler"
+      ]
+    }
+  }
+}

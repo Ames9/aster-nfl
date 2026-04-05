@@ -1,0 +1,40 @@
+{
+  "id": "day_7",
+  "date": "2026-04-11",
+  "answer": {
+    "name": "Michael Thomas",
+    "comment": "2019年にNFLのシーズン最多レシーブ記録(149回)を樹立した、Xのハンドルネーム「Cantguardmike」に恥じない圧倒的なキャッチ力を誇ったNOのWRです。4年目までの成績だとJustin Jeffersonと同レベルで殿堂入り一直線だと思っていたら、度重なる怪我に泣くことに（使いすぎ説はありますが）。ただ、可能な限りリハビリを続けてフィールドに戻ってきて、ボロボロになった身体でも技術だけで凄まじいプレーを見せていました。NOでは一番好きな選手で、今でも現地観戦はThomasユニで行きます。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Michael_Thomas_2018.png/330px-Michael_Thomas_2018.png",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Michael_Thomas_(wide_receiver%2C_born_1993)",
+    "pfr_id": "ThomMi05",
+    "pfr_url": "https://www.pro-football-reference.com/players/T/ThomMi05.htm",
+    "espn_id": "15231",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/15231"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "New Orleans Saints Teammate",
+      "players": [
+        "Trey Hendrickson",
+        "Cameron Jordan"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "College: Ohio State",
+      "players": [
+        "Corey Linsley",
+        "Denzel Ward"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "Award: Offensive Player of the Year",
+      "players": [
+        "Justin Jefferson",
+        "Adrian Peterson"
+      ]
+    }
+  }
+}

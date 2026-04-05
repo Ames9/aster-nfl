@@ -1,0 +1,40 @@
+{
+  "id": "day_31",
+  "date": "2026-05-05",
+  "answer": {
+    "name": "Aaron Donald",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Aaron_Donald_2020_%28cropped%29.jpg/330px-Aaron_Donald_2020_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Aaron_Donald",
+    "pfr_id": "DonaAa00",
+    "pfr_url": "https://www.pro-football-reference.com/players/D/DonaAa00.htm",
+    "espn_id": "16716",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/16716"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Draft Class: 2014",
+      "players": [
+        "Anthony Barr",
+        "Odell Beckham"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Los Angeles Rams Teammate",
+      "players": [
+        "Brandin Cooks",
+        "Leonard Floyd"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "Award: Defensive Player of the Year",
+      "players": [
+        "Terrell Suggs",
+        "T.J. Watt"
+      ]
+    }
+  }
+}

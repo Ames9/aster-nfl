@@ -1,0 +1,40 @@
+{
+  "id": "day_29",
+  "date": "2026-05-03",
+  "answer": {
+    "name": "Justin Herbert",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Justin_Herbert_presnap_against_the_Washington_Commanders.jpg/330px-Justin_Herbert_presnap_against_the_Washington_Commanders.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Justin_Herbert",
+    "pfr_id": "HerbJu00",
+    "pfr_url": "https://www.pro-football-reference.com/players/H/HerbJu00.htm",
+    "espn_id": "4038941",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4038941"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Los Angeles Chargers Teammate",
+      "players": [
+        "Derwin James",
+        "Chris Harris"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "College: Oregon",
+      "players": [
+        "Arik Armstead",
+        "DeForest Buckner"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#6 Overall)",
+      "players": [
+        "Morris Claiborne",
+        "Vernon Davis"
+      ]
+    }
+  }
+}

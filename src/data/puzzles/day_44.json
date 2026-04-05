@@ -1,0 +1,40 @@
+{
+  "id": "day_44",
+  "date": "2026-05-18",
+  "answer": {
+    "name": "Mike Evans",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/WFT_vs._Buccaneers_%2851685960398%29_%28cropped%29.jpg/330px-WFT_vs._Buccaneers_%2851685960398%29_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Mike_Evans_(wide_receiver)",
+    "pfr_id": "EvanMi00",
+    "pfr_url": "https://www.pro-football-reference.com/players/E/EvanMi00.htm",
+    "espn_id": "16737",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/16737"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Draft Class: 2014",
+      "players": [
+        "Blake Bortles",
+        "Anthony Barr"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Drafted by Tampa Bay Buccaneers",
+      "players": [
+        "Vita Vea",
+        "Chris Godwin"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#7 Overall)",
+      "players": [
+        "Darrius Heyward-Bey",
+        "Mark Barron"
+      ]
+    }
+  }
+}

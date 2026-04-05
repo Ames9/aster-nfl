@@ -1,0 +1,40 @@
+{
+  "id": "day_4",
+  "date": "2026-04-08",
+  "answer": {
+    "name": "Stephon Gilmore",
+    "comment": "今週引退を発表。2019年にDPoY(最優秀守備選手賞)に輝いた実績を持つ、リーグを代表するコーナーバックでした。元々ドラフトされたBUFのイメージが全くないレベルでNEの4年間が全盛期という感じでしたね。ただ、その後ジャーニーマンになっても結構活躍していた印象でした。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Stephon_Gilmore_WFT-Panthers_NOV2021_%28cropped%29.jpg/330px-Stephon_Gilmore_WFT-Panthers_NOV2021_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Stephon_Gilmore",
+    "pfr_id": "GilmSt00",
+    "pfr_url": "https://www.pro-football-reference.com/players/G/GilmSt00.htm",
+    "espn_id": "14942",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/14942"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Draft Class: 2012",
+      "players": [
+        "Dontari Poe",
+        "Robert Griffin"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "New England Patriots Teammate",
+      "players": [
+        "Marcus Cannon",
+        "Rob Gronkowski"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "College: South Carolina",
+      "players": [
+        "Johnathan Joseph",
+        "Brandon Shell"
+      ]
+    }
+  }
+}
