@@ -23,9 +23,13 @@ export const PlayerInput: React.FC<PlayerInputProps> = ({
   const [isOpen, setIsOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
-  // Jr. / Sr. / II / III / IV などのサフィックスを除去して比較
+  // 表記揺れを吸収: アポストロフィ・ピリオド・ハイフン除去 + サフィックス除去
+  // 例: "Ja'Marr" → "jamarr", "D.J." → "dj", "Le'Veon" → "leveon"
   const normalizeName = (s: string) =>
-    s.toLowerCase().replace(/\s+(jr\.?|sr\.?|ii|iii|iv|v)$/i, "").trim();
+    s.toLowerCase()
+      .replace(/['\u2019.\-]/g, "")   // ' ' . - を除去
+      .replace(/\s+(jr|sr|ii|iii|iv|v)$/i, "")
+      .trim();
 
   const normalizedQuery = normalizeName(query);
   const filteredPlayers = playerDatabase
