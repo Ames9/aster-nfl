@@ -24,17 +24,14 @@
       "colorCode": "#2ecc71",
       "hint": "Los Angeles Chargers Teammate",
       "players": [
-        "Melvin Ingram",
-        "Philip Rivers"
+        "Melvin Gordon",
+        "Justin Herbert"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "College: Western State",
-      "players": [
-        "Aaron Rodgers",
-        "Tom Brady"
-      ]
+      "hint": "Washington Commanders Teammate (2024 and 2025)",
+      "players": ["Terry McLaurin", "Jayden Daniels"]
     }
   }
 }

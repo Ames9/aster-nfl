@@ -814,11 +814,26 @@ def generate_puzzle(
         print("  [ERROR] Not enough criteria. Skip.")
         return None
 
+    # ---- ヒント候補数を事前計算（各 criterion で target 除外後の人数）----
+    hint_avail: Dict[str, int] = {
+        c["label"]: len(players_matching(c, pool, rosters, awards) - {target})
+        for c in criteria
+    }
+
+    def has_good_hints(combo: tuple) -> bool:
+        """combo 内の全 criterion がヒント選手 2 人以上持つか"""
+        return all(hint_avail[c["label"]] >= 2 for c in combo)
+
     # ---- 一意 triple を探す ----
-    best_triple: Optional[tuple] = None
-    best_size:   Optional[int]   = None
-    best_inter:  Optional[Set]   = None
-    found = False
+    # 優先順: (1) UNIQUE + good hints  (2) UNIQUE  (3) best match count + good hints  (4) best
+    best_triple:       Optional[tuple] = None
+    best_size:         Optional[int]   = None
+    best_inter:        Optional[Set]   = None
+    best_good_triple:  Optional[tuple] = None  # good hints があるベスト
+    best_good_size:    Optional[int]   = None
+    best_good_inter:   Optional[Set]   = None
+    found      = False
+    found_good = False  # UNIQUE かつ good hints
 
     teammate_crit = [c for c in criteria if c["type"] == "teammate"]
     other_crit    = [c for c in criteria if c["type"] not in TEAM_CRIT_TYPES]
@@ -835,27 +850,50 @@ def generate_puzzle(
         if not is_valid_combo(combo):
             continue
         is_u, inter = check_unique(combo, target, pool, rosters, awards)
-        if is_u:
+        good = has_good_hints(combo)
+        if is_u and good:
             best_triple, best_inter, found = combo, inter, True
+            found_good = True
             break
+        if is_u and not found:
+            best_triple, best_inter, found = combo, inter, True
+        if good and (best_good_size is None or len(inter) < best_good_size):
+            best_good_size, best_good_triple, best_good_inter = len(inter), combo, inter
         if best_size is None or len(inter) < best_size:
             best_size, best_triple, best_inter = len(inter), combo, inter
 
     # フェーズ B: 全組み合わせから（フィルター付き）
-    if not found:
+    if not found_good:
         all_combos = [c for c in itertools.combinations(criteria, 3) if is_valid_combo(c)]
         random.shuffle(all_combos)
         for combo in all_combos[:MAX_COMBO_TRY]:
+            if not is_valid_combo(combo):
+                continue
             is_u, inter = check_unique(combo, target, pool, rosters, awards)
-            if is_u:
+            good = has_good_hints(combo)
+            if is_u and good:
                 best_triple, best_inter, found = combo, inter, True
+                found_good = True
                 break
+            if is_u and not found:
+                best_triple, best_inter, found = combo, inter, True
+            if good and (best_good_size is None or len(inter) < best_good_size):
+                best_good_size, best_good_triple, best_good_inter = len(inter), combo, inter
             if best_size is None or len(inter) < best_size:
                 best_size, best_triple, best_inter = len(inter), combo, inter
 
     if best_triple is None:
         print("  [ERROR] No triple found. Skip.")
         return None
+
+    # UNIQUE + good hints が見つからなかった場合、good hints だけでもあれば優先
+    if not found_good and best_good_triple is not None:
+        best_triple, best_inter = best_good_triple, best_good_inter
+        print(f"  [WARN] No unique combo with full hint players — using best combo with good hints")
+    elif not found_good:
+        # どのcomboもヒント選手不足 → 警告
+        short = [c["label"] for c in best_triple if hint_avail[c["label"]] < 2]
+        print(f"  [WARN] Hint players < 2 for: {short}")
 
     tag = "[UNIQUE]" if found else f"[BEST ~{best_size}]"
     print(f"  {tag} {[c['label'] for c in best_triple]}")
@@ -884,11 +922,7 @@ def generate_puzzle(
             n=2, excluded=set(hint_names),  # 既出のヒント選手を除外
         )
 
-        if len(hints) < 2:
-            # フォールバック: 知名度上位から未使用選手を補完
-            fallback = [p for p in sorted(pool, key=lambda x: fame_scores.get(x, 0), reverse=True)
-                        if p != target and p not in hints and p not in hint_names]
-            hints += fallback[:2 - len(hints)]
+        # ヒント選手が2人未満の場合は空のままにする（無関係な有名選手で埋めない）
 
         connections[color] = {
             "colorCode": color_codes[color],
