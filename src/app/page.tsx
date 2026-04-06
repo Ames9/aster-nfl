@@ -1,71 +1,74 @@
 import fs from "fs";
 import path from "path";
-import DailyNFLPuzzle from "@/components/DailyNFLPuzzle";
+import PuzzleNavigator from "./PuzzleNavigator";
 import type { PuzzleData, PlayerEntry } from "@/data/day1";
 
 export const dynamic = "force-dynamic";
 
 const PUZZLES_DIR = path.join(process.cwd(), "src/data/puzzles");
 
-/**
- * src/data/puzzles/ にある day_N.json を全て読み込み、
- * 今日（JST）の日付に対応するパズルを返す。
- *
- * - 日付が完全一致するものを優先
- * - 一致しない場合は day_1 起点でローテーション
- * - 新しいパズルを追加しても page.tsx の変更は不要
- */
-function getTodaysPuzzle(): { puzzle: PuzzleData; playerDatabase: PlayerEntry[] } {
+function loadPuzzles(): PuzzleData[] {
+  const files = fs
+    .readdirSync(PUZZLES_DIR)
+    .filter((f) => /^day_\d+\.json$/.test(f))
+    .sort((a, b) => parseInt(a.match(/\d+/)![0]) - parseInt(b.match(/\d+/)![0]));
+  return files.map((f) =>
+    JSON.parse(fs.readFileSync(path.join(PUZZLES_DIR, f), "utf-8"))
+  );
+}
+
+/** 今日（JST）のパズルインデックス（0始まり）を返す */
+function getTodayIndex(puzzles: PuzzleData[]): number {
   const today = new Date().toLocaleDateString("sv-SE", {
     timeZone: "Asia/Tokyo",
   });
 
-  // day_N.json を番号順で読み込む
-  const files = fs
-    .readdirSync(PUZZLES_DIR)
-    .filter((f) => /^day_\d+\.json$/.test(f))
-    .sort((a, b) => {
-      const na = parseInt(a.match(/\d+/)![0]);
-      const nb = parseInt(b.match(/\d+/)![0]);
-      return na - nb;
-    });
+  const exact = puzzles.findIndex((p) => p.date === today);
+  if (exact >= 0) return exact;
 
-  const puzzles: PuzzleData[] = files.map((f) =>
-    JSON.parse(fs.readFileSync(path.join(PUZZLES_DIR, f), "utf-8"))
+  if (puzzles.length === 0) return 0;
+  const startDate = new Date(puzzles[0].date + "T00:00:00+09:00");
+  const nowDate   = new Date(today        + "T00:00:00+09:00");
+  const dayOffset = Math.floor(
+    (nowDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
   );
+  return ((dayOffset % puzzles.length) + puzzles.length) % puzzles.length;
+}
 
-  // playerDatabase を共有 JSON から読み込む
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ day?: string }>;
+}) {
+  const { day } = await searchParams;
+
+  const puzzles = loadPuzzles();
+  const todayIndex = getTodayIndex(puzzles);
+
+  // ?day=N （1始まり）で過去日を指定。未指定・範囲外は今日
+  let currentIndex = todayIndex;
+  if (day !== undefined) {
+    const n = parseInt(day, 10);
+    if (!isNaN(n) && n >= 1 && n <= puzzles.length) {
+      // 未来日（n-1 > todayIndex）は今日にフォールバック
+      currentIndex = Math.min(n - 1, todayIndex);
+    }
+  }
+
+  const puzzle = puzzles[currentIndex];
+
   const dbPath = path.join(PUZZLES_DIR, "player_database.json");
   const playerDatabase: PlayerEntry[] = fs.existsSync(dbPath)
     ? JSON.parse(fs.readFileSync(dbPath, "utf-8"))
     : [];
 
-  // 日付完全一致
-  const exact = puzzles.find((p) => p.date === today);
-  if (exact) return { puzzle: exact, playerDatabase };
-
-  // ローテーション（startDate 基準）
-  if (puzzles.length === 0) {
-    throw new Error("No puzzle files found in src/data/puzzles/");
-  }
-  const startDate = new Date(puzzles[0].date + "T00:00:00+09:00");
-  const nowDate   = new Date(today + "T00:00:00+09:00");
-  const dayOffset = Math.floor(
-    (nowDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
-  );
-  const idx =
-    ((dayOffset % puzzles.length) + puzzles.length) % puzzles.length;
-  return { puzzle: puzzles[idx], playerDatabase };
-}
-
-export default function Home() {
-  const { puzzle, playerDatabase } = getTodaysPuzzle();
-
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-black min-h-screen py-12 px-4 sm:px-6">
-      <DailyNFLPuzzle
-        data={puzzle}
+      <PuzzleNavigator
+        puzzle={puzzle}
         playerDatabase={playerDatabase}
+        dayNumber={currentIndex + 1}
+        todayNumber={todayIndex + 1}
         lang="ja"
       />
     </div>

@@ -2,38 +2,38 @@
   "id": "day_14",
   "date": "2026-04-18",
   "answer": {
-    "name": "Geno Smith",
-    "comment": "",
-    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Geno_Smith_Raiders_2025_%28cropped%29.jpg/330px-Geno_Smith_Raiders_2025_%28cropped%29.jpg",
-    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Geno_Smith",
-    "pfr_id": "SmitGe00",
-    "pfr_url": "https://www.pro-football-reference.com/players/S/SmitGe00.htm",
-    "espn_id": "15864",
-    "espn_url": "https://www.espn.com/nfl/player/_/id/15864"
+    "name": "Jason Kelce",
+    "comment": "機動力を活かしたブロックでPHIの強力なラン攻撃を長年支え続け、引退するまでリーグ最高のセンターとして君臨した鉄人。弟Travis Kelce (KCのTE)とのポッドキャストも面白い。偉大なレジェンドでした。ちなみにフィラデルフィアに行った時、雑誌コーナーでTaylor SwiftとJason Kelceの特集号が横に並んでました。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/JasonKelce.jpg/330px-JasonKelce.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Jason_Kelce",
+    "pfr_id": "KelcJa00",
+    "pfr_url": "https://www.pro-football-reference.com/players/K/KelcJa00.htm",
+    "espn_id": "14124",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/14124"
   },
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2013 Round 2",
+      "hint": "Philadelphia Eagles Teammate",
       "players": [
-        "Darius Slay",
-        "Lane Johnson"
+        "Brandon Graham",
+        "LeSean McCoy"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Seattle Seahawks Teammate",
+      "hint": "Draft Class: 2011 Round 2",
       "players": [
-        "Russell Wilson",
-        "Nick Bellore"
+        "Jake McQuaide",
+        "Mario Addison"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Drafted by New York Jets",
+      "hint": "College: Cincinnati",
       "players": [
-        "Leonard Williams",
-        "Demario Davis"
+        "John Hughes",
+        "Mike Boone"
       ]
     }
   }

@@ -2,38 +2,38 @@
   "id": "day_20",
   "date": "2026-04-24",
   "answer": {
-    "name": "Odell Beckham Jr.",
-    "comment": "",
-    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Odell_Beckham_Jr._%2853103730122%29_%28cropped%29.jpg/330px-Odell_Beckham_Jr._%2853103730122%29_%28cropped%29.jpg",
-    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Odell_Beckham_Jr.",
-    "pfr_id": "BeckOd00",
-    "pfr_url": "https://www.pro-football-reference.com/players/B/BeckOd00.htm",
-    "espn_id": "16733",
-    "espn_url": "https://www.espn.com/nfl/player/_/id/16733"
+    "name": "Davante Adams",
+    "comment": "ディフェンスの足首を破壊するような変幻自在のリリースとルートランで相手を翻弄する至高のWR。全てが格好いい。GB時代はアーロン・ロジャースのトップターゲットとして一時代を築きました。Netflixの「Receiver」シリーズ、LVにいた年なのでずっとチーム状況とHCにイライラしているんですが、それでも格好いい。しばらく勿体無いシーズンを過ごしていたので、LARで復活できて良かったです。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Davante_Adams_Packers_vs_WFT_OCT2021_%28cropped%29.jpg/330px-Davante_Adams_Packers_vs_WFT_OCT2021_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Davante_Adams",
+    "pfr_id": "AdamDa01",
+    "pfr_url": "https://www.pro-football-reference.com/players/A/AdamDa01.htm",
+    "espn_id": "16800",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/16800"
   },
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Drafted by New York Giants",
+      "hint": "Draft Class: 2014 Round 2",
       "players": [
-        "Steve Smith",
-        "Dexter Lawrence"
+        "Josh Allen",
+        "Josh Harris"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Cleveland Browns Teammate",
+      "hint": "Green Bay Packers Teammate",
       "players": [
-        "Myles Garrett",
-        "Kareem Hunt"
+        "Aaron Rodgers",
+        "Randall Cobb"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Offensive Rookie of the Year",
+      "hint": "College: Fresno State",
       "players": [
-        "Cam Newton",
-        "Ja'Marr Chase"
+        "Curtis Riley",
+        "Tyeler Davison"
       ]
     }
   }

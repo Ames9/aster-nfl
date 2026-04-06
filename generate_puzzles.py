@@ -941,71 +941,43 @@ def main():
     # ============================================================
     START_DATE = datetime.date(2026, 4, 5)
 
+    # Day 1〜10 はすでに確定済み JSON がある → SKIP_IF_EXISTS=True でスキップ
+    SKIP_IF_EXISTS = True
+
     TARGET_PLAYERS = [
-        # ---- playerdescription.md に記載済みの選手（Day 1〜10） ----
-        # 並び順 = そのままパズルの日付順になる
+        # ---- Day 1〜10: 既存 JSON に合わせた正確な順序 ----
         "Drew Brees",           # Day 1
         "George Kittle",        # Day 2
-        "Ja'Marr Chase",        # Day 3
-        "Stephon Gilmore",      # Day 4
+        "Stephon Gilmore",      # Day 3
+        "Ja'Marr Chase",        # Day 4
         "Brandon Aubrey",       # Day 5
-        "Kirk Cousins",         # Day 6
+        "James Conner",         # Day 6
         "Michael Thomas",       # Day 7
         "Fred Warner",          # Day 8
-        "James Conner",         # Day 9
+        "Kirk Cousins",         # Day 9
         "Antonio Brown",        # Day 10
-        # ---- 以降（コメントは後でplayerdescription.mdに追記） ----
-        "Joe Flacco",
-        "Todd Gurley",
-        "Nick Bosa",
-        "Geno Smith",
-        "Von Miller",
-        "Patrick Mahomes",
-        "Derrick Henry",
-        "Rob Gronkowski",
-        "Aaron Rodgers",
-        "Odell Beckham Jr.",
-        "Richard Sherman",
-        "Luke Kuechly",
-        "Josh Allen",
-        "Davante Adams",
-        "Tyreek Hill",
-        "Khalil Mack",
-        "Alvin Kamara",
-        "Cooper Kupp",
-        "Justin Herbert",
-        "Travis Kelce",
-        "Aaron Donald",
-        "Lamar Jackson",
-        "DeAndre Hopkins",
-        "Bobby Wagner",
-        "Dalvin Cook",
-        "Joe Burrow",
-        "Stefon Diggs",
-        "Myles Garrett",
-        "Dak Prescott",
-        "Keenan Allen",
-        "Jalen Ramsey",
-        "Nick Chubb",
-        "Kyler Murray",
-        "Mike Evans",
-        "T.J. Watt",
-        "Matthew Stafford",
-        "Ezekiel Elliott",
-        "Patrick Peterson",
-        "Tyler Lockett",
-        "Justin Jefferson",
-        "Christian McCaffrey",
-        "Micah Parsons",
-        "Russell Wilson",
-        "Amari Cooper",
-        "Harrison Smith",
-        "Julio Jones",
-        "Saquon Barkley",
-        "Maxx Crosby",
-        "Adam Thielen",
-        "Tyrann Mathieu",
-        "Le'Veon Bell",
+        # ---- Day 11〜31: playerdescription.md 記載順 ----
+        "Maxx Crosby",          # Day 11
+        "Chris Olave",          # Day 12
+        "Austin Ekeler",        # Day 13
+        "Jason Kelce",          # Day 14
+        "Ryan Fitzpatrick",     # Day 15
+        "Nik Bonitto",          # Day 16
+        "Kyle Hamilton",        # Day 17
+        "Trey Hendrickson",     # Day 18
+        "Trent McDuffie",       # Day 19
+        "Davante Adams",        # Day 20
+        "Alvin Kamara",         # Day 21
+        "Cameron Heyward",      # Day 22
+        "Zack Baun",            # Day 23
+        "Dak Prescott",         # Day 24
+        "Cameron Dicker",       # Day 25
+        "Trey McBride",         # Day 26
+        "DJ Moore",             # Day 27
+        "Tristan Wirfs",        # Day 28
+        "Jeffery Simmons",      # Day 29
+        "Bobby Wagner",         # Day 30
+        "Chris Godwin",         # Day 31
     ]
 
     # 開始日から1日ずつ日付を割り当て
@@ -1058,6 +1030,12 @@ def main():
 
     results: List[dict] = []
     for day_id, (target, date_str) in enumerate(targets, start=1):
+        path = out_dir / f"day_{day_id}.json"
+        if SKIP_IF_EXISTS and path.exists():
+            existing = json.loads(path.read_text())
+            print(f"  → Skipped (exists): {path}  [{existing['answer']['name']}]")
+            results.append(existing)
+            continue
         puzzle = generate_puzzle(
             target, day_id, date_str,
             pool, rosters, players_db, awards, fame_scores, draft_picks_n, player_ids,
@@ -1065,7 +1043,6 @@ def main():
         )
         if puzzle is None:
             continue
-        path = out_dir / f"day_{day_id}.json"
         with open(path, "w", encoding="utf-8") as f:
             json.dump(puzzle, f, ensure_ascii=False, indent=2)
         print(f"  → Saved: {path}")

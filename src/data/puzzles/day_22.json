@@ -2,38 +2,38 @@
   "id": "day_22",
   "date": "2026-04-26",
   "answer": {
-    "name": "Luke Kuechly",
-    "comment": "",
-    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Luke_Kuechly.jpg/330px-Luke_Kuechly.jpg",
-    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Luke_Kuechly",
-    "pfr_id": "KuecLu00",
-    "pfr_url": "https://www.pro-football-reference.com/players/K/KuecLu00.htm",
-    "espn_id": "14938",
-    "espn_url": "https://www.espn.com/nfl/player/_/id/14938"
+    "name": "Cameron Heyward",
+    "comment": "スティーラーズの顔は、ヤンチャなWR陣とか毎年変わるQBとかより、この人（とTJ Watt）であるべきではないでしょうか。オールプロ6回(1st 4回)、長年PITの強力なディフェンスを支え続ける大黒柱のDTです。フィールド内外でチームを牽引する素晴らしいリーダーシップでWalter Payton Man of the Yearの受賞歴も持つ人格者。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Cameron_Heyward_OCT2021_%28cropped%29.jpg/330px-Cameron_Heyward_OCT2021_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Cameron_Heyward",
+    "pfr_id": "HeywCa01",
+    "pfr_url": "https://www.pro-football-reference.com/players/H/HeywCa01.htm",
+    "espn_id": "13977",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/13977"
   },
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Carolina Panthers Teammate",
+      "hint": "Pittsburgh Steelers Teammate",
       "players": [
-        "Steve Smith",
-        "Cam Newton"
+        "James Conner",
+        "Joe Haden"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Award: Defensive Rookie of the Year",
+      "hint": "College: Ohio State",
       "players": [
-        "Nick Bosa",
-        "Julius Peppers"
+        "Michael Thomas",
+        "Nick Bosa"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Defensive Player of the Year",
+      "hint": "1st Round Pick (#31 Overall)",
       "players": [
-        "T.J. Watt",
-        "James Harrison"
+        "Doug Martin",
+        "Chris Wells"
       ]
     }
   }

@@ -2,38 +2,38 @@
   "id": "day_15",
   "date": "2026-04-19",
   "answer": {
-    "name": "Von Miller",
-    "comment": "",
-    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Commanders_Training_Camp_-_54752497153.jpg/330px-Commanders_Training_Camp_-_54752497153.jpg",
-    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Von_Miller",
-    "pfr_id": "MillVo00",
-    "pfr_url": "https://www.pro-football-reference.com/players/M/MillVo00.htm",
-    "espn_id": "13976",
-    "espn_url": "https://www.espn.com/nfl/player/_/id/13976"
+    "name": "Ryan Fitzpatrick",
+    "comment": "「ジャーニーマン」と言えばこの人というQB。あの立派な髭のインパクト、ハーバード出身とキャラが濃く、「フィッツマジック」の愛称で親しまれファンから愛される不思議な魅力を持った選手でした。引退して当然のようにテレビに呼ばれていますね。僕がFantasy Footballきっかけに本格的に見始めた2018の最初の3週間にとんでもない成績（3週連続で400ヤード投げてる）だったので良く覚えています。その後MIAに行って、Tuaのメンターやってた時期も良かったですね。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ryan_Fitzpatrick_Thursday_Night_Football_DEC2023_%28cropped%29.jpg/330px-Ryan_Fitzpatrick_Thursday_Night_Football_DEC2023_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Ryan_Fitzpatrick",
+    "pfr_id": "FitzRy00",
+    "pfr_url": "https://www.pro-football-reference.com/players/F/FitzRy00.htm",
+    "espn_id": "8664",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/8664"
   },
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Buffalo Bills Teammate",
+      "hint": "Drafted by Los Angeles Rams",
       "players": [
-        "Tre'Davious White",
-        "Stefon Diggs"
+        "Jared Goff",
+        "Rob Havenstein"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Award: Defensive Rookie of the Year",
+      "hint": "Tampa Bay Buccaneers Teammate",
       "players": [
-        "Terrell Suggs",
-        "Sheldon Richardson"
+        "Gerald McCoy",
+        "Garrison Sanborn"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Award: Super Bowl MVP",
+      "hint": "College: Harvard",
       "players": [
-        "Patrick Mahomes",
-        "Cooper Kupp"
+        "Tyler Ott",
+        "Kyle Juszczyk"
       ]
     }
   }

@@ -2,38 +2,38 @@
   "id": "day_26",
   "date": "2026-04-30",
   "answer": {
-    "name": "Khalil Mack",
-    "comment": "",
-    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Khalil_Mack_Bears_2019_%28cropped%29.jpg/330px-Khalil_Mack_Bears_2019_%28cropped%29.jpg",
-    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Khalil_Mack",
-    "pfr_id": "MackKh00",
-    "pfr_url": "https://www.pro-football-reference.com/players/M/MackKh00.htm",
-    "espn_id": "16710",
-    "espn_url": "https://www.espn.com/nfl/player/_/id/16710"
+    "name": "Trey McBride",
+    "comment": "。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/2024_FanDuel_Interview_Trey_McBride_%28cropped%29.png/330px-2024_FanDuel_Interview_Trey_McBride_%28cropped%29.png",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Trey_McBride",
+    "pfr_id": "McBrTr01",
+    "pfr_url": "https://www.pro-football-reference.com/players/M/McBrTr01.htm",
+    "espn_id": "4361307",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4361307"
   },
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Las Vegas Raiders Teammate",
+      "hint": "Draft Class: 2022 Round 2",
       "players": [
-        "Jon Feliciano",
-        "Shelby Harris"
+        "Jordan Williams",
+        "Michael Griffin"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "College: Buffalo",
+      "hint": "Arizona Cardinals Teammate",
       "players": [
-        "Josh Thomas",
-        "Tyree Jackson"
+        "Kelvin Beachum",
+        "Hjalte Froholdt"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "1st Round Pick (#5 Overall)",
+      "hint": "College: Colorado State",
       "players": [
-        "Devin White",
-        "Tua Tagovailoa"
+        "Garrett Grayson",
+        "Shaquil Barrett"
       ]
     }
   }

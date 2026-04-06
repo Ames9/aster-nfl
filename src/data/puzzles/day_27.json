@@ -2,38 +2,38 @@
   "id": "day_27",
   "date": "2026-05-01",
   "answer": {
-    "name": "Alvin Kamara",
-    "comment": "",
-    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Alvin_Kamara_Sonoma_2023.jpg/330px-Alvin_Kamara_Sonoma_2023.jpg",
-    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Alvin_Kamara",
-    "pfr_id": "KamaAl00",
-    "pfr_url": "https://www.pro-football-reference.com/players/K/KamaAl00.htm",
-    "espn_id": "3054850",
-    "espn_url": "https://www.espn.com/nfl/player/_/id/3054850"
+    "name": "D.J. Moore",
+    "comment": "どのチーム、どのQBと組んでも毎年安定して1000ヤードを稼ぎ出す、リーグ屈指の安定感とYAC（キャッチ後のラン）能力を誇るWRです。CARからCHIへの大型トレードの目玉として移籍した後も大黒柱として活躍し続ける姿を見ると、派手さは控えめながら本当に実力のあるトップレシーバーだなと感心させられますね。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DJ_Moore_WFT-Panthers_NOV2021_%28cropped%29.jpg/330px-DJ_Moore_WFT-Panthers_NOV2021_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/D._J._Moore",
+    "pfr_id": "MoorD.00",
+    "pfr_url": "https://www.pro-football-reference.com/players/M/MoorD.00.htm",
+    "espn_id": "3915416",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/3915416"
   },
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "New Orleans Saints Teammate",
+      "hint": "Drafted by Carolina Panthers",
       "players": [
-        "Trey Hendrickson",
-        "Derek Carr"
+        "Christian McCaffrey",
+        "Trai Turner"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "College: Tennessee",
+      "hint": "Chicago Bears Teammate",
       "players": [
-        "Malik Jackson",
-        "Michael Palardy"
+        "Montez Sweat",
+        "Josh Blackwell"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Draft Class: 2017 Round 3",
+      "hint": "1st Round Pick (#24 Overall)",
       "players": [
-        "Chris Godwin",
-        "Kareem Hunt"
+        "Steven Jackson",
+        "Najee Harris"
       ]
     }
   }
