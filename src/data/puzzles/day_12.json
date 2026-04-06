@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "College: Ohio State",
+      "hint": "College: Ohio State, 11th overall pick",
       "players": [
-        "Denzel Ward",
-        "Michael Thomas"
+        "Justin Fields",
+        "Marshon Lattimore"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "New Orleans Saints Teammate",
       "players": [
-        "Cameron Jordan",
-        "Pete Werner"
+        "Rashid Shaheed",
+        "Tyler Shough"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Draft Class: 2022 Round 1",
+      "hint": "2022 NFL Draft, 1st Round Pick",
       "players": [
-        "Aidan Hutchinson",
-        "Kayvon Thibodeaux"
+        "Garret Wilson",
+        "Jameson Williams"
       ]
     }
   }
