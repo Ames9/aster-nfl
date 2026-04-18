@@ -3,7 +3,7 @@
   "date": "2026-05-02",
   "answer": {
     "name": "Tristan Wirfs",
-    "comment": "ルーキーイヤーから右タックルとしてトム・ブレイディのパスプロテクトを支えてスーパーボウル制覇に貢献し、その後左タックルに転向しても完璧なプレイを見せるTBの最強OTです。プールからジャンプして上がるという常人離れした身体能力のエピソード通り、あの巨体でエッジラッシャーをシャットアウトする動きは芸術的ですらありますね。",
+    "comment": "ルーキーイヤーから右タックルとしてトム・ブレイディのパスプロテクトを支えてスーパーボウル制覇に貢献し、その後左タックルに転向しても完璧なプレイを見せるTBの最強OT。プールからジャンプして上がるという常人離れした身体能力のエピソード通り、巨体でエッジラッシャーをシャットアウトする動きは芸術的。",
     "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Tristan_Wirfs_%2850832403298%29_%28cropped%29.jpg/330px-Tristan_Wirfs_%2850832403298%29_%28cropped%29.jpg",
     "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Tristan_Wirfs",
     "pfr_id": "WirfTr00",
@@ -14,26 +14,26 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Draft Class: 2020 Round 2",
+      "hint": "Draft Class: 2020 Round 1",
       "players": [
-        "Michael Pittman",
-        "Josh Thomas"
+        "Jerry Jeudy",
+        "AJ Terrell"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Tampa Bay Buccaneers Teammate",
       "players": [
-        "Mike Evans",
-        "Garrison Sanborn"
+        "Baker Mayfield",
+        "Chris Godwin"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "College: Iowa",
       "players": [
-        "Casey Kreiter",
-        "Bryan Bulaga"
+        "George Kittle",
+        "Jack Campbell"
       ]
     }
   }

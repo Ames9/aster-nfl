@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Dallas Cowboys Teammate",
       "players": [
-        "Joe Thomas",
+        "Ezekiel Elliott",
         "Amari Cooper"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "College: Mississippi State",
+      "hint": "College: Mississippi State, drafted in 2016",
       "players": [
-        "K.J. Wright",
-        "Darius Slay"
+        "Chris Jones",
+        "Will Redmond"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Award: Walter Payton Man of the Year",
       "players": [
-        "Calais Campbell",
-        "Peyton Manning"
+        "J.J. Watt",
+        "Bobby Wagner"
       ]
     }
   }

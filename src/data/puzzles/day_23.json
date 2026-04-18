@@ -14,10 +14,10 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "New Orleans Saints Teammate",
+      "hint": "Philadelphia Eagles Teammate",
       "players": [
-        "Drew Brees",
-        "Cameron Jordan"
+        "Jalen Hurts",
+        "Nacobe Dean"
       ]
     },
     "green": {
@@ -25,15 +25,15 @@
       "hint": "College: Wisconsin",
       "players": [
         "J.J. Watt",
-        "Dare Ogunbowale"
+        "T.J. Watt"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "Draft Class: 2020 Round 3",
+      "hint": "Draft Class: 2020 by New Orleans Saints",
       "players": [
-        "Dalton Keene",
-        "Justin Madubuike"
+        "Cesar Ruiz",
+        "Adam Trautman"
       ]
     }
   }

@@ -22,17 +22,17 @@
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "Position: LB",
+      "hint": "Oklahoma University Alumni",
       "players": [
-        "Micah Parsons",
-        "Roquan Smith"
+        "Marvin Mims",
+        "Kyler Murray"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Denver Broncos Teammate",
       "players": [
-        "P.J. Locke",
+        "Bo Nix",
         "Courtland Sutton"
       ]
     }

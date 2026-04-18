@@ -16,24 +16,24 @@
       "colorCode": "#ff6b6b",
       "hint": "Pittsburgh Steelers Teammate",
       "players": [
-        "James Conner",
-        "Joe Haden"
+        "Ben Roethlisberger",
+        "T.J. Watt"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "College: Ohio State",
+      "hint": "Walter Payton Man of the Year Award Winner",
       "players": [
-        "Michael Thomas",
-        "Nick Bosa"
+        "J.J. Watt",
+        "Bobby Wagner"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
-      "hint": "1st Round Pick (#31 Overall)",
+      "hint": "1st Round Pick, 2011 NFL draft",
       "players": [
-        "Doug Martin",
-        "Chris Wells"
+        "Cameron Jordan",
+        "Von Miller"
       ]
     }
   }
