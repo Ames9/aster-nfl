@@ -14,18 +14,18 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Drafted by Los Angeles Rams",
+      "hint": "Drafted by St Louis Rams",
       "players": [
-        "Jared Goff",
-        "Rob Havenstein"
+        "Aaron Donald",
+        "Robert Quinn"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Tampa Bay Buccaneers Teammate",
       "players": [
-        "Gerald McCoy",
-        "Garrison Sanborn"
+        "Mike Evans",
+        "Jameis Winston"
       ]
     },
     "blue": {
