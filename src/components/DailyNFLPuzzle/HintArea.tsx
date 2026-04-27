@@ -2,6 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import type { PuzzleData } from "../../data/day1";
 
+function extractCategory(hint: string): string {
+  if (/teammate/i.test(hint)) return "NFL Teammate";
+  if (/^College:/i.test(hint)) return "College";
+  if (/^Draft Class:/i.test(hint)) return "Draft Class";
+  if (/^Drafted by/i.test(hint)) return "Draft Pick";
+  if (/^Award:/i.test(hint)) return "Award";
+  if (/^Position:/i.test(hint)) return "Position";
+  return "Connection";
+}
+
 type HintAreaProps = {
   mistakes: number;
   maxMistakes: number;
@@ -76,21 +86,19 @@ export const HintArea: React.FC<HintAreaProps> = ({
                       className="text-xs font-bold mb-0.5"
                       style={{ color: hint.data.colorCode }}
                     >
-                      {hint.label} Connection
+                      {hint.label}:
                     </span>
                     <span className="text-sm text-zinc-200">{hint.data.hint}</span>
                   </motion.div>
                 ) : (
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-col">
                     <span
-                      className="text-xs font-bold"
-                      style={{ color: `${hint.data.colorCode}60` }}
+                      className="text-xs font-bold mb-0.5"
+                      style={{ color: hint.data.colorCode }}
                     >
-                      {hint.label}
+                      {hint.label}: {extractCategory(hint.data.hint)}
                     </span>
-                    <span className="text-xs text-zinc-600">
-                      — {texts.lockedHint}
-                    </span>
+                    <span className="text-sm text-zinc-600">???</span>
                   </div>
                 )}
               </div>

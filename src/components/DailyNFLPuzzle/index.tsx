@@ -133,15 +133,13 @@ export const DailyNFLPuzzle: React.FC<DailyNFLPuzzleProps> = ({
                 submitText={t.submit}
                 noResultsText={t.noResults}
               />
-              {/* スキップ：ミス1回消費して次のヒントを開く */}
-              {mistakes < maxMistakes - 1 && (
-                <button
-                  onClick={handleSkip}
-                  className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors text-center py-1"
-                >
-                  {t.skip}
-                </button>
-              )}
+              {/* スキップ：ミス1回消費して次のヒントを開く（全ヒント開放後はゲームオーバーへ） */}
+              <button
+                onClick={handleSkip}
+                className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors text-center py-1"
+              >
+                {t.skip}
+              </button>
             </div>
           )}
         </div>

@@ -52,9 +52,14 @@ export const ResultModal: React.FC<ResultModalProps> = ({ isClear, texts, answer
               {isClear
                 ? <CheckCircle className="w-6 h-6 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]" />
                 : <XCircle className="w-6 h-6 text-zinc-400" />}
-              <h2 className={`text-xl font-bold ${isClear ? "text-white" : "text-zinc-300"}`}>
-                {isClear ? texts.clear : texts.gameOver}
-              </h2>
+              <div>
+                <h2 className={`text-xl font-bold ${isClear ? "text-white" : "text-zinc-300"}`}>
+                  {isClear ? texts.clear : texts.gameOver}
+                </h2>
+                {!isClear && answer?.name && (
+                  <p className="text-sm font-semibold text-zinc-400 mt-0.5">{answer.name}</p>
+                )}
+              </div>
             </div>
 
             {answer?.comment && (
@@ -103,6 +108,9 @@ export const ResultModal: React.FC<ResultModalProps> = ({ isClear, texts, answer
           <h2 className={`text-xl font-bold ${isClear ? "text-white" : "text-zinc-300"}`}>
             {isClear ? texts.clear : texts.gameOver}
           </h2>
+          {!isClear && answer?.name && (
+            <p className="text-sm font-semibold text-zinc-400 mt-1">{answer.name}</p>
+          )}
 
           {answer?.comment && (
             <p className="mt-3 text-sm text-zinc-400 leading-relaxed">
