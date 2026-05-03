@@ -1,0 +1,40 @@
+{
+  "id": "day_34",
+  "date": "2026-05-08",
+  "answer": {
+    "name": "Nick Bosa",
+    "comment": "お兄さんのJoeyもトップEDGEとして活躍しているBosa兄弟の弟で、もはやNickの方が上という評価も出てきている怪物パスラッシャーです。DPoY複数回受賞。体格・技術・モーターの全てが揃っていて、SFがコンテンダーでいられる最大の理由の一つです。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Nick_Bosa_vs_Redskins_2019.jpg/330px-Nick_Bosa_vs_Redskins_2019.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Nick_Bosa",
+    "pfr_id": "BosaNi00",
+    "pfr_url": "https://www.pro-football-reference.com/players/B/BosaNi00.htm",
+    "espn_id": "4040605",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4040605"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "San Francisco 49ers Teammate",
+      "players": [
+        "Fred Warner",
+        "Javon Hargrave"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Award: Defensive Rookie of the Year",
+      "players": [
+        "Von Miller",
+        "Luke Kuechly"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#2 Overall)",
+      "players": [
+        "Mitchell Trubisky",
+        "Marcus Mariota"
+      ]
+    }
+  }
+}

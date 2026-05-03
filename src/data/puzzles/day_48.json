@@ -1,0 +1,40 @@
+{
+  "id": "day_48",
+  "date": "2026-05-22",
+  "answer": {
+    "name": "Justin Jefferson",
+    "comment": "もはや現役最高WRという言葉しか出てこない、MINの看板スターです。難しいボールでも身体能力と技術で捻じ伏せて取り切るとんでもないキャッチング能力を誇り、NFL入り後の各種記録を次々と塗り替えてきた怪物レシーバーです。早くスーパーボウルに出てほしい。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Jefferson_2022.jpg/330px-Jefferson_2022.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Justin_Jefferson",
+    "pfr_id": "JeffJu00",
+    "pfr_url": "https://www.pro-football-reference.com/players/J/JeffJu00.htm",
+    "espn_id": "4262921",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4262921"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Minnesota Vikings Teammate",
+      "players": [
+        "Jordan Hicks",
+        "Aaron Jones"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "College: LSU",
+      "players": [
+        "Danielle Hunter",
+        "Ja'Marr Chase"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "Award: Offensive Player of the Year",
+      "players": [
+        "Christian McCaffrey",
+        "Peyton Manning"
+      ]
+    }
+  }
+}

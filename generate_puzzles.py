@@ -37,6 +37,12 @@ PFR_ID_OVERRIDES: Dict[str, str] = {
 # Wikipedia 記事タイトルが曖昧ページや別人にヒットする場合に正しいタイトルを指定する
 WIKI_TITLE_OVERRIDES: Dict[str, str] = {
     "Michael Thomas": "Michael_Thomas_(wide_receiver,_born_1993)",
+    "Jessie Bates": "Jessie_Bates_III",
+    "Justin Jefferson": "Justin_Jefferson_(wide_receiver)",
+    "A.J. Brown": "A.J._Brown_(wide_receiver)",
+    "Aaron Donald": "Aaron_Donald",
+    "Keenan Allen": "Keenan_Allen",
+    "Khalil Mack": "Khalil_Mack",
 }
 
 # ============================================================
@@ -1012,6 +1018,29 @@ def main():
         "Jeffery Simmons",      # Day 29
         "Bobby Wagner",         # Day 30
         "Chris Godwin",         # Day 31
+        # ---- Day 32〜53: 追加分 ----
+        "Justin Simmons",       # Day 32
+        "Patrick Mahomes",      # Day 33
+        "Nick Bosa",            # Day 34
+        "Amon-Ra St. Brown",    # Day 35
+        "Brock Purdy",          # Day 36
+        "Josh Jacobs",          # Day 37
+        "Myles Garrett",        # Day 38
+        "Justin Herbert",       # Day 39
+        "Deebo Samuel",         # Day 40
+        "Demario Davis",        # Day 41
+        "Derrick Henry",        # Day 42
+        "Larry Fitzgerald",     # Day 43
+        "Joe Burrow",           # Day 44
+        "Antoine Winfield Jr.", # Day 45
+        "Keenan Allen",         # Day 46
+        "Jessie Bates",         # Day 47
+        "Justin Jefferson",     # Day 48
+        "Aaron Donald",         # Day 49
+        "A.J. Brown",           # Day 50
+        "CeeDee Lamb",          # Day 51
+        "Khalil Mack",          # Day 52
+        "Lamar Jackson",        # Day 53
     ]
 
     # 開始日から1日ずつ日付を割り当て

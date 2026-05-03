@@ -1,0 +1,40 @@
+{
+  "id": "day_50",
+  "date": "2026-05-24",
+  "answer": {
+    "name": "A.J. Brown",
+    "comment": "Xのアカウント名が「alwaysopen」というのはそのまんまで、本当にいつでも開いているというプレーを見せ続けるPHIのトップWRです。大きな身体でスピードもあってコンタクトにも強く、ファーストダウンを稼ぐ力は現役WRトップクラス。アカウント名に負けていない格好よさがある。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/AJ_Brown_071624.jpg/330px-AJ_Brown_071624.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/A._J._Brown",
+    "pfr_id": "BrowAJ00",
+    "pfr_url": "https://www.pro-football-reference.com/players/B/BrowAJ00.htm",
+    "espn_id": "4047646",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4047646"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Draft Class: 2019 Round 2",
+      "players": [
+        "Anthony Johnson",
+        "Chris Johnson"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Philadelphia Eagles Teammate",
+      "players": [
+        "Darius Slay",
+        "Jalen Hurts"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "College: Mississippi",
+      "players": [
+        "John Jerry",
+        "Mike Hilton"
+      ]
+    }
+  }
+}

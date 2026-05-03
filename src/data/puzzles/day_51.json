@@ -1,0 +1,40 @@
+{
+  "id": "day_51",
+  "date": "2026-05-25",
+  "answer": {
+    "name": "CeeDee Lamb",
+    "comment": "DALというプレーオフでの壁に何度も阻まれてきたチームにいながら、個人としては毎年リーグトップクラスの成績を叩き出すWRです。ルート・スピード・YAC全てが高水準で、Prescottとのコンビは普通に怖い。早くDALがプレーオフで勝てるチームになってほしい（49ersと当たらない限り）。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/CeeDee_Lamb_by_Gage_Skidmore_%28cropped%29.jpg/330px-CeeDee_Lamb_by_Gage_Skidmore_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/CeeDee_Lamb",
+    "pfr_id": "LambCe00",
+    "pfr_url": "https://www.pro-football-reference.com/players/L/LambCe00.htm",
+    "espn_id": "4241389",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4241389"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Dallas Cowboys Teammate",
+      "players": [
+        "Dak Prescott",
+        "La'el Collins"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "College: Oklahoma",
+      "players": [
+        "Adrian Peterson",
+        "Trent Williams"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#17 Overall)",
+      "players": [
+        "Derwin James",
+        "Dexter Lawrence"
+      ]
+    }
+  }
+}

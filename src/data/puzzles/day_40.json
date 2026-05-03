@@ -1,0 +1,36 @@
+{
+  "id": "day_40",
+  "date": "2026-05-14",
+  "answer": {
+    "name": "Deebo Samuel",
+    "comment": "WRでありながら普通にキャリーも与えられ、RB的な役割もこなすKyle Shanahan考案の「ワイドバック」として活躍するSFの異色の選手です。ディフェンス側からすると守り方が本当によくわからないタイプで、アンドアウトルートがそのまま15ヤード走られたりするのはたまりません。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Deebo_Samuel_2025_week_1.jpg/330px-Deebo_Samuel_2025_week_1.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Deebo_Samuel"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Draft Class: 2019 Round 2",
+      "players": [
+        "Isaiah Prince",
+        "Byron Murphy"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "San Francisco 49ers Teammate",
+      "players": [
+        "Richard Sherman",
+        "Alex Mack"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "College: South Carolina",
+      "players": [
+        "Chris Lammons",
+        "Jared Cook"
+      ]
+    }
+  }
+}

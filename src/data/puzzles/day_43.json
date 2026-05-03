@@ -1,0 +1,40 @@
+{
+  "id": "day_43",
+  "date": "2026-05-17",
+  "answer": {
+    "name": "Larry Fitzgerald",
+    "comment": "ARIで全キャリアを過ごしながら、通算レシーブヤードがJerry Riceに次ぐ歴代2位という数字は改めてとんでもないと思います。優勝争いとは縁遠いチームでここまで積み上げたのは純粋に驚異的で、殿堂入りは当然として歴代最高WR議論でも名前が出てきても不思議じゃないですよね。",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Larry_Fitzgerald_2017.jpg/330px-Larry_Fitzgerald_2017.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Larry_Fitzgerald",
+    "pfr_id": "FitzLa00",
+    "pfr_url": "https://www.pro-football-reference.com/players/F/FitzLa00.htm",
+    "espn_id": "5528",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/5528"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Drafted by Arizona Cardinals",
+      "players": [
+        "Anquan Boldin",
+        "Tyrann Mathieu"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "ARZ Teammate",
+      "players": [
+        "Carson Palmer",
+        "Ted Larsen"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#3 Overall)",
+      "players": [
+        "Quinnen Williams",
+        "Derek Stingley Jr."
+      ]
+    }
+  }
+}
