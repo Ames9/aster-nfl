@@ -3,7 +3,7 @@
   "date": "2026-05-08",
   "answer": {
     "name": "Nick Bosa",
-    "comment": "お兄さんのJoeyもトップEDGEとして活躍しているBosa兄弟の弟で、もはやNickの方が上という評価も出てきている怪物パスラッシャーです。DPoY複数回受賞。体格・技術・モーターの全てが揃っていて、SFがコンテンダーでいられる最大の理由の一つです。",
+    "comment": "兄弟でトップEDGEとして活躍しているBosa兄弟の弟。怪物パスラッシャーです。体格・技術・モーターの全てが揃ってる。現地観戦すると存在感が凄いです。",
     "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Nick_Bosa_vs_Redskins_2019.jpg/330px-Nick_Bosa_vs_Redskins_2019.jpg",
     "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Nick_Bosa",
     "pfr_id": "BosaNi00",
@@ -17,15 +17,15 @@
       "hint": "San Francisco 49ers Teammate",
       "players": [
         "Fred Warner",
-        "Javon Hargrave"
+        "Arik Armstead"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "Award: Defensive Rookie of the Year",
       "players": [
-        "Von Miller",
-        "Luke Kuechly"
+        "Jared Verse",
+        "Chase Young"
       ]
     },
     "blue": {
@@ -33,7 +33,7 @@
       "hint": "1st Round Pick (#2 Overall)",
       "players": [
         "Mitchell Trubisky",
-        "Marcus Mariota"
+        "Jayden Daniels"
       ]
     }
   }
