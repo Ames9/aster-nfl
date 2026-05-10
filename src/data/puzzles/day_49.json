@@ -16,23 +16,23 @@
       "colorCode": "#ff6b6b",
       "hint": "College: Pittsburgh",
       "players": [
-        "Jaryd Jones-Smith",
-        "K'Waun Williams"
+        "James Conner",
+        "Larry Fitzgerald"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "SL Teammate",
+      "hint": "Los Angeles Rams Teammate",
       "players": [
-        "Mark Barron",
-        "Cody Davis"
+        "Cooper Kupp",
+        "Matthew Stafford"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "Award: Defensive Player of the Year",
       "players": [
-        "Charles Woodson",
+        "Myles Garrett",
         "J.J. Watt"
       ]
     }

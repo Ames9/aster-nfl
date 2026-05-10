@@ -16,15 +16,15 @@
       "colorCode": "#ff6b6b",
       "hint": "Minnesota Vikings Teammate",
       "players": [
-        "Jordan Hicks",
-        "Aaron Jones"
+        "J.J. McCarthy",
+        "Jordan Addison"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
       "hint": "College: LSU",
       "players": [
-        "Danielle Hunter",
+        "Joe Burrow",
         "Ja'Marr Chase"
       ]
     },
@@ -33,7 +33,7 @@
       "hint": "Award: Offensive Player of the Year",
       "players": [
         "Christian McCaffrey",
-        "Peyton Manning"
+        "Michael Thomas"
       ]
     }
   }

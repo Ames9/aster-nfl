@@ -14,18 +14,18 @@
   "connections": {
     "red": {
       "colorCode": "#ff6b6b",
-      "hint": "Drafted by Arizona Cardinals",
+      "hint": "Drafted in 2004, Round 1",
       "players": [
-        "Anquan Boldin",
-        "Tyrann Mathieu"
+        "Philip Rivers",
+        "Eli Manning"
       ]
     },
     "green": {
       "colorCode": "#2ecc71",
-      "hint": "ARZ Teammate",
+      "hint": "Arizona Cardinals Teammate",
       "players": [
         "Carson Palmer",
-        "Ted Larsen"
+        "David Johnson"
       ]
     },
     "blue": {

@@ -16,7 +16,7 @@
       "colorCode": "#ff6b6b",
       "hint": "Chicago Bears Teammate",
       "players": [
-        "Chase Daniel",
+        "Mitchell Trubisky",
         "Roquan Smith"
       ]
     },
@@ -24,16 +24,16 @@
       "colorCode": "#2ecc71",
       "hint": "College: Buffalo",
       "players": [
-        "Mason Schreck",
-        "Josh Thomas"
+        "K.J. Osborn",
+        "Malcolm Koonce"
       ]
     },
     "blue": {
       "colorCode": "#3498db",
       "hint": "1st Round Pick (#5 Overall)",
       "players": [
-        "Terence Newman",
-        "Bradley Chubb"
+        "Arvell Reese",
+        "Joe Alt"
       ]
     }
   }
