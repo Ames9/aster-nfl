@@ -1,0 +1,40 @@
+{
+  "id": "day_82",
+  "date": "2026-06-25",
+  "answer": {
+    "name": "Aidan Hutchinson",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Aidan_Hutchinson.jpg/330px-Aidan_Hutchinson.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Aidan_Hutchinson",
+    "pfr_id": "HutcAi00",
+    "pfr_url": "https://www.pro-football-reference.com/players/H/HutcAi00.htm",
+    "espn_id": "4372099",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4372099"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "College: Michigan",
+      "players": [
+        "Kwity Paye",
+        "Nico Collins"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Detroit Lions Teammate",
+      "players": [
+        "David Montgomery",
+        "Amon-Ra St. Brown"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#2 Overall)",
+      "players": [
+        "Nick Bosa",
+        "Saquon Barkley"
+      ]
+    }
+  }
+}

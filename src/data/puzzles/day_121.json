@@ -1,0 +1,40 @@
+{
+  "id": "day_121",
+  "date": "2026-08-03",
+  "answer": {
+    "name": "Bo Nix",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Bo_Nix_scramble.png/330px-Bo_Nix_scramble.png",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Bo_Nix",
+    "pfr_id": "NixxBo00",
+    "pfr_url": "https://www.pro-football-reference.com/players/N/NixxBo00.htm",
+    "espn_id": "4426338",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4426338"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "College: Oregon",
+      "players": [
+        "Marcus Mariota",
+        "Justin Herbert"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Denver Broncos Teammate",
+      "players": [
+        "D.J. Jones",
+        "Zach Allen"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#12 Overall)",
+      "players": [
+        "Micah Parsons",
+        "Rashan Gary"
+      ]
+    }
+  }
+}

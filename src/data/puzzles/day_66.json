@@ -1,0 +1,40 @@
+{
+  "id": "day_66",
+  "date": "2026-06-09",
+  "answer": {
+    "name": "Penei Sewell",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Penei_Sewell_%2852480402764%29_%28cropped%29.jpg/330px-Penei_Sewell_%2852480402764%29_%28cropped%29.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Penei_Sewell",
+    "pfr_id": "SewePe00",
+    "pfr_url": "https://www.pro-football-reference.com/players/S/SewePe00.htm",
+    "espn_id": "4373825",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4373825"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Draft Class: 2021 Round 2",
+      "players": [
+        "Aaron Banks",
+        "Landon Young"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Detroit Lions Teammate",
+      "players": [
+        "Alex Anzalone",
+        "Taylor Decker"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "College: Oregon",
+      "players": [
+        "DeForest Buckner",
+        "Justin Herbert"
+      ]
+    }
+  }
+}

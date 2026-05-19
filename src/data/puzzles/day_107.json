@@ -1,0 +1,38 @@
+{
+  "id": "day_107",
+  "date": "2026-07-20",
+  "answer": {
+    "name": "James Cook",
+    "comment": "",
+    "pfr_id": "CookJa01",
+    "pfr_url": "https://www.pro-football-reference.com/players/C/CookJa01.htm",
+    "espn_id": "4379399",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4379399"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Draft Class: 2022 Round 2",
+      "players": [
+        "Devin Lloyd",
+        "Brock Purdy"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "College: Georgia",
+      "players": [
+        "Leonard Floyd",
+        "Matthew Stafford"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "Buffalo Bills Teammate",
+      "players": [
+        "Josh Allen",
+        "Von Miller"
+      ]
+    }
+  }
+}

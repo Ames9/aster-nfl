@@ -1,0 +1,38 @@
+{
+  "id": "day_91",
+  "date": "2026-07-04",
+  "answer": {
+    "name": "Sam Darnold",
+    "comment": "",
+    "pfr_id": "DarnSa00",
+    "pfr_url": "https://www.pro-football-reference.com/players/D/DarnSa00.htm",
+    "espn_id": "3912547",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/3912547"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Drafted by New York Jets",
+      "players": [
+        "Leonard Williams",
+        "Demario Davis"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Carolina Panthers Teammate",
+      "players": [
+        "D.J. Moore",
+        "Shaq Thompson"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#3 Overall)",
+      "players": [
+        "Will Anderson Jr.",
+        "Quinnen Williams"
+      ]
+    }
+  }
+}

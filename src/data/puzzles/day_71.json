@@ -1,0 +1,40 @@
+{
+  "id": "day_71",
+  "date": "2026-06-14",
+  "answer": {
+    "name": "Jared Goff",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Jared_Goff_2022.jpg/330px-Jared_Goff_2022.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Jared_Goff",
+    "pfr_id": "GoffJa00",
+    "pfr_url": "https://www.pro-football-reference.com/players/G/GoffJa00.htm",
+    "espn_id": "3046779",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/3046779"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Detroit Lions Teammate",
+      "players": [
+        "Amon-Ra St. Brown",
+        "David Montgomery"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "College: California",
+      "players": [
+        "Aaron Rodgers",
+        "Keenan Allen"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#1 Overall)",
+      "players": [
+        "Baker Mayfield",
+        "Myles Garrett"
+      ]
+    }
+  }
+}

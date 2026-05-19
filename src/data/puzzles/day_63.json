@@ -1,0 +1,40 @@
+{
+  "id": "day_63",
+  "date": "2026-06-06",
+  "answer": {
+    "name": "Chris Jones",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Chris_Jones_at_the_White_House_%28964941048258173%29_01.png/330px-Chris_Jones_at_the_White_House_%28964941048258173%29_01.png",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Chris_Jones_(defensive_tackle%2C_born_1994)",
+    "pfr_id": "JoneCh09",
+    "pfr_url": "https://www.pro-football-reference.com/players/J/JoneCh09.htm",
+    "espn_id": "14723",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/14723"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Draft Class: 2016 Round 2",
+      "players": [
+        "Kyle Peko",
+        "Ronnie Stanley"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "Kansas City Chiefs Teammate",
+      "players": [
+        "James Winchester",
+        "Andrew Wylie"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "College: Mississippi State",
+      "players": [
+        "J.T. Gray",
+        "Denico Autry"
+      ]
+    }
+  }
+}

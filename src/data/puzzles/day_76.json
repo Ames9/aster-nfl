@@ -1,0 +1,40 @@
+{
+  "id": "day_76",
+  "date": "2026-06-19",
+  "answer": {
+    "name": "Nico Collins",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Nico_Collins_2019.jpg/330px-Nico_Collins_2019.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Nico_Collins",
+    "pfr_id": "CollNi00",
+    "pfr_url": "https://www.pro-football-reference.com/players/C/CollNi00.htm",
+    "espn_id": "4258173",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4258173"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "Houston Texans Teammate",
+      "players": [
+        "Maliek Collins",
+        "Jerry Hughes"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "College: Michigan",
+      "players": [
+        "Kwity Paye",
+        "Tom Brady"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "Draft Class: 2021 Round 3",
+      "players": [
+        "Divine Deablo",
+        "Osa Odighizuwa"
+      ]
+    }
+  }
+}

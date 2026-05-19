@@ -1,0 +1,40 @@
+{
+  "id": "day_122",
+  "date": "2026-08-04",
+  "answer": {
+    "name": "Malik Nabers",
+    "comment": "",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Malik_Nabers_Giants_week_1_2025.jpg/330px-Malik_Nabers_Giants_week_1_2025.jpg",
+    "photo_credit": "Wikipedia – https://en.wikipedia.org/wiki/Malik_Nabers",
+    "pfr_id": "NabeMa00",
+    "pfr_url": "https://www.pro-football-reference.com/players/N/NabeMa00.htm",
+    "espn_id": "4595348",
+    "espn_url": "https://www.espn.com/nfl/player/_/id/4595348"
+  },
+  "connections": {
+    "red": {
+      "colorCode": "#ff6b6b",
+      "hint": "College: LSU",
+      "players": [
+        "Justin Jefferson",
+        "Danielle Hunter"
+      ]
+    },
+    "green": {
+      "colorCode": "#2ecc71",
+      "hint": "New York Giants Teammate",
+      "players": [
+        "Brian Burns",
+        "Devin Singletary"
+      ]
+    },
+    "blue": {
+      "colorCode": "#3498db",
+      "hint": "1st Round Pick (#6 Overall)",
+      "players": [
+        "Daniel Jones",
+        "Jaylen Waddle"
+      ]
+    }
+  }
+}

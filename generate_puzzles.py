@@ -31,18 +31,22 @@ warnings.filterwarnings("ignore")
 
 # 同名別人が存在し、display_name の重複排除で意図しない選手が入る場合に明示指定する
 PFR_ID_OVERRIDES: Dict[str, str] = {
-    "Michael Thomas": "ThomMi05",  # Saints WR (#13) / ThomMi02 は Safety
+    "Michael Thomas":  "ThomMi05",  # Saints WR (#13) / ThomMi02 は Safety
+    "Chris Jones":     "JoneCh09",  # Chiefs DT (born 1994) / JoneCh04 は別人
+    "Josh Hines-Allen": "AlleJo03", # JAX DE / ロースターでは "Josh Allen" 表記 → pfr_id で特定
 }
 
 # Wikipedia 記事タイトルが曖昧ページや別人にヒットする場合に正しいタイトルを指定する
 WIKI_TITLE_OVERRIDES: Dict[str, str] = {
-    "Michael Thomas": "Michael_Thomas_(wide_receiver,_born_1993)",
-    "Jessie Bates": "Jessie_Bates_III",
-    "Justin Jefferson": "Justin_Jefferson_(wide_receiver)",
-    "A.J. Brown": "A.J._Brown_(wide_receiver)",
-    "Aaron Donald": "Aaron_Donald",
-    "Keenan Allen": "Keenan_Allen",
-    "Khalil Mack": "Khalil_Mack",
+    "Michael Thomas":     "Michael_Thomas_(wide_receiver,_born_1993)",
+    "Jessie Bates":       "Jessie_Bates_III",
+    "Justin Jefferson":   "Justin_Jefferson_(wide_receiver)",
+    "A.J. Brown":         "A.J._Brown_(wide_receiver)",
+    "Aaron Donald":       "Aaron_Donald",
+    "Keenan Allen":       "Keenan_Allen",
+    "Khalil Mack":        "Khalil_Mack",
+    "Chris Jones":        "Chris_Jones_(defensive_tackle,_born_1994)",
+    "Mike Evans":         "Mike_Evans_(wide_receiver)",
 }
 
 # ============================================================
@@ -210,8 +214,8 @@ def load_nflverse_draft_picks() -> pd.DataFrame:
 # ============================================================
 
 ROSTER_YEARS   = list(range(2010, 2026))  # 2025シーズンも取得
-MIN_SEASONS    = 3          # 一意性テスト用プールの最低シーズン数
-HINT_TOP_POOL  = 10         # ヒント候補の上位プールサイズ（この中からランダム選択）
+MIN_SEASONS    = 2          # 一意性テスト用プールの最低シーズン数（2024ルーキー対応）
+HINT_TOP_POOL  = 3          # ヒント候補の上位プールサイズ（この中からランダム選択）
 MAX_COMBO_TRY  = 3000
 TEAM_CRIT_TYPES = {"team_played", "teammate"}
 MAX_TEAM_CRIT   = 1
@@ -418,14 +422,15 @@ def load_all_data() -> Tuple[pd.DataFrame, pd.DataFrame, List[str], Dict[str, fl
     else:
         player_wav = {}
 
+    # O(1) lookup for season count fallback (avoids O(n) filter per player)
+    n_seasons_by_name = rosters.groupby("player_name")["season"].nunique().to_dict()
+
     def calc_fame(name: str) -> float:
         wav = player_wav.get(name, 0) or 0
         last = player_last_season.get(name, 2010)
         recency = 1.0 + RECENCY_WEIGHT * max(0, last - RECENCY_BASE_YEAR)
-        # w_av が 0（未指名等）の場合、出場シーズン数 × 5 を代替値として使う
         if wav == 0:
-            n_seasons = rosters[rosters["player_name"] == name]["season"].nunique()
-            wav = n_seasons * 5
+            wav = n_seasons_by_name.get(name, 0) * 2
         return wav * recency
 
     fame_scores = {name: calc_fame(name) for name in rosters["player_name"].dropna().unique()}
@@ -756,36 +761,111 @@ def pick_hints(
     draft_picks_n: Dict[str, int],
     n: int = 2,
     excluded: Optional[Set[str]] = None,
+    target_rows: Optional[pd.DataFrame] = None,
 ) -> List[str]:
     """
     criterion にマッチする選手からヒント選手を n 人選ぶ。
 
-    criterion 別ソート基準:
-      - draft_year     : ドラフト指名順位（pick番号）昇順 = 同年上位指名を優先
-      - draft_pick_exact: 知名度スコア降順（同じ全体順位 = 少人数なので fame 順が自然）
-      - その他（college含む）: 知名度スコア（w_av × recency_bonus）降順
+    criterion 別スコアリング:
+      teammate        : overlap_seasons × fame_score
+                        （同じチームで実際に長く一緒にプレーした有名選手を優先）
+      college         : fame_score × era_weight
+                        （ターゲットの entry_year に近い卒業生を優先）
+      draft_pick_exact: entry_year ±5 年以内の同じ全体指名順位の選手を優先し fame_score でソート
+      draft_year_round: 同年・同巡の選手から fame_score 順（players_matching で既にフィルタ済み）
+      team_played     : seasons_at_team × fame_score
+      その他           : fame_score のみ
 
     選定プロセス:
-      1. マッチする全候補を取得
-      2. 基準でソートし上位 HINT_TOP_POOL 人を候補プールとして確定
+      1. criterion にマッチする全候補を上記スコアでソート
+      2. 上位 HINT_TOP_POOL 人を候補プールとして確定
       3. その中からランダムに n 人選ぶ（毎回少し変化させるため）
     """
     _excluded = (excluded or set()) | {target}
     matched = players_matching(criterion, pool, rosters, awards) - _excluded
 
     ctype = criterion["type"]
+    val   = criterion["value"]
 
-    if False:
-        pass  # 将来の分岐用プレースホルダー
+    # ターゲットの entry_year（era 系判定に共通利用）
+    target_entry: Optional[float] = None
+    if target_rows is not None and not target_rows.empty and "entry_year" in target_rows.columns:
+        ey = target_rows["entry_year"].dropna()
+        if not ey.empty:
+            target_entry = float(ey.iloc[0])
+
+    if ctype == "teammate":
+        # overlap_seasons × fame_score
+        team           = val["team"]
+        target_seasons = set(val["seasons"])
+
+        # Pre-compute seasons at team for each candidate (avoid per-player DataFrame filter)
+        _team_filter = rosters[(rosters["team_c"] == team) & (rosters["player_name"].isin(matched))]
+        _team_player_seasons = _team_filter.groupby("player_name")["season"].apply(set).to_dict()
+
+        def _tm_score(p: str) -> float:
+            overlap = len(_team_player_seasons.get(p, set()) & target_seasons)
+            return overlap * fame_scores.get(p, 0)
+
+        ranked = sorted(matched, key=_tm_score, reverse=True)
+
+    elif ctype == "college":
+        # fame_score × era_weight（entry_year の差に応じて逓減）
+        _col_entry_years = (
+            rosters[rosters["player_name"].isin(matched)]
+            .groupby("player_name")["entry_year"]
+            .first()
+            .dropna()
+            .astype(float)
+            .to_dict()
+        )
+
+        def _col_score(p: str) -> float:
+            fame = fame_scores.get(p, 0)
+            if target_entry is None or p not in _col_entry_years:
+                return fame
+            era_diff = abs(_col_entry_years[p] - target_entry)
+            era_weight = 1.0 / (1.0 + era_diff / 8.0)
+            return fame * era_weight
+
+        ranked = sorted(matched, key=_col_score, reverse=True)
+
+    elif ctype == "draft_pick_exact":
+        # 同じ全体指名順位で entry_year ±5 年以内の選手を優先（era-local な著名選手）
+        if target_entry is not None:
+            _draft_entry_years = (
+                rosters[rosters["player_name"].isin(matched)]
+                .groupby("player_name")["entry_year"]
+                .first()
+                .dropna()
+                .astype(float)
+                .to_dict()
+            )
+            era_set = {p for p in matched if p in _draft_entry_years and abs(_draft_entry_years[p] - target_entry) <= 5}
+            if len(era_set) >= n:
+                matched = era_set
+
+        ranked = sorted(matched, key=lambda p: fame_scores.get(p, 0), reverse=True)
+
+    elif ctype == "team_played":
+        # seasons_at_team × fame_score（長くそのチームにいた有名選手を優先）
+        team = val
+
+        _tp_season_counts = (
+            rosters[(rosters["team_c"] == team) & (rosters["player_name"].isin(matched))]
+            .groupby("player_name")["season"]
+            .nunique()
+            .to_dict()
+        )
+
+        def _tp_score(p: str) -> float:
+            return _tp_season_counts.get(p, 0) * fame_scores.get(p, 0)
+
+        ranked = sorted(matched, key=_tp_score, reverse=True)
 
     else:
-        # college / draft_round / draft_pick_exact / team_played / teammate / award など
-        # すべて知名度スコア（w_av × recency_bonus）降順
-        ranked = sorted(
-            matched,
-            key=lambda p: fame_scores.get(p, 0),
-            reverse=True,
-        )
+        # draft_year_round / award / udfa / draft_club / position など → fame_score のみ
+        ranked = sorted(matched, key=lambda p: fame_scores.get(p, 0), reverse=True)
 
     top = ranked[:HINT_TOP_POOL]
     if len(top) < n:
@@ -916,6 +996,15 @@ def generate_puzzle(
     print(f"  Hint order (match counts): {[c['label'] for c in sorted_triple]} {match_counts}")
 
     # ---- ヒント選手 ----
+    # per-criterion スコアリング用にターゲットのロースター行を取得
+    _pfr = (player_ids or {}).get(target, {}).get("pfr_id")
+    if _pfr and "pfr_id" in rosters.columns:
+        _target_rows = rosters[rosters["pfr_id"] == _pfr]
+        if _target_rows.empty:
+            _target_rows = rosters[rosters["player_name"] == target]
+    else:
+        _target_rows = rosters[rosters["player_name"] == target]
+
     connections: Dict[str, dict] = {}
     hint_names: List[str] = []
     color_keys = ["red", "green", "blue"]
@@ -925,7 +1014,8 @@ def generate_puzzle(
         color = color_keys[i]
         hints = pick_hints(
             crit, target, pool, rosters, awards, fame_scores, draft_picks_n,
-            n=2, excluded=set(hint_names),  # 既出のヒント選手を除外
+            n=2, excluded=set(hint_names),
+            target_rows=_target_rows,
         )
 
         # ヒント選手が2人未満の場合は空のままにする（無関係な有名選手で埋めない）
@@ -1041,6 +1131,81 @@ def main():
         "CeeDee Lamb",          # Day 51
         "Khalil Mack",          # Day 52
         "Lamar Jackson",        # Day 53
+        # ---- Day 54〜60: NFLトップ100 2025未登場選手（ポジション連続回避） ----
+        "Saquon Barkley",       # Day 54  RB  (#1)
+        "T.J. Watt",            # Day 55  LB  (#11)
+        "Josh Allen",           # Day 56  QB  (#3)
+        "Travis Kelce",         # Day 57  TE  (#37)
+        "Pat Surtain II",       # Day 58  CB  (#10)
+        "Jahmyr Gibbs",         # Day 59  RB  (#27)
+        "Micah Parsons",        # Day 60  DE  (#36)
+        # ---- Day 61〜70 ----
+        "Jalen Hurts",          # Day 61  QB  (#19)
+        "Tyreek Hill",          # Day 62  WR  (#47)
+        "Chris Jones",          # Day 63  DT  (#12)
+        "Xavier McKinney",      # Day 64  S   (#30)
+        "Danielle Hunter",      # Day 65  DE  (#25)
+        "Penei Sewell",         # Day 66  OT  (#13)
+        "Roquan Smith",         # Day 67  LB  (#40)
+        "Mike Evans",           # Day 68  WR  (#44)
+        "Derek Stingley Jr.",   # Day 69  CB  (#18)
+        "Christian McCaffrey",  # Day 70  RB  (#73)
+        # ---- Day 71〜116: Top 100 残り全選手（ポジション連続回避） ----
+        "Jared Goff",           # Day 71  QB  (#15)
+        "Dexter Lawrence",      # Day 72  DT  (#17)
+        "Lane Johnson",         # Day 73  OT  (#23)
+        "Budda Baker",          # Day 74  S   (#34)
+        "Will Anderson Jr.",    # Day 75  DE  (#46)
+        "Nico Collins",         # Day 76  WR  (#32)
+        "Jonathan Greenard",    # Day 77  LB  (#48)
+        "Baker Mayfield",       # Day 78  QB  (#50)
+        "Trent Williams",       # Day 79  OT  (#45)
+        "Jalen Carter",         # Day 80  DT  (#43)
+        "Derwin James",         # Day 81  S   (#54)
+        "Aidan Hutchinson",     # Day 82  DE  (#55)
+        "C.J. Stroud",          # Day 83  QB  (#39)
+        "Terry McLaurin",       # Day 84  WR  (#52)
+        "Dion Dawkins",         # Day 85  OT  (#42)
+        "Joe Mixon",            # Day 86  RB  (#58)
+        "Matthew Stafford",     # Day 87  QB  (#59)
+        "Jalen Ramsey",         # Day 88  CB  (#66)
+        "Tee Higgins",          # Day 89  WR  (#77)
+        "Patrick Queen",        # Day 90  LB  (#75)
+        "Sam Darnold",          # Day 91  QB  (#72)
+        "Jared Verse",          # Day 92  LB  (#53)
+        "Vita Vea",             # Day 93  DT  (#76)
+        "Jordan Love",          # Day 94  QB  (#68)
+        "Kerby Joseph",         # Day 95  S   (#71)
+        "Frankie Luvu",         # Day 96  LB  (#70)
+        "Josh Hines-Allen",     # Day 97  DE  (#63)
+        "Puka Nacua",           # Day 98  WR  (#41)
+        "Bijan Robinson",       # Day 99  RB  (#62)
+        "Tua Tagovailoa",       # Day 100 QB  (#91)
+        "Rashan Gary",          # Day 101 DE  (#80)
+        "Christian Gonzalez",   # Day 102 CB  (#84)
+        "Kyren Williams",       # Day 103 RB  (#85)
+        "Laremy Tunsil",        # Day 104 OT  (#86)
+        "Quinnen Williams",     # Day 105 DT  (#87)
+        "Andrew Van Ginkel",    # Day 106 LB  (#88)
+        "James Cook",           # Day 107 RB  (#89)
+        "Zach Allen",           # Day 108 DE  (#90)
+        "Sam LaPorta",          # Day 109 TE  (#94)
+        "Creed Humphrey",       # Day 110 C   (#93)
+        "Josh Sweat",           # Day 111 DE  (#95)
+        "Lavonte David",        # Day 112 LB  (#96)
+        "Drake London",         # Day 113 WR  (#97)
+        "Aaron Jones",          # Day 114 RB  (#98)
+        "Leonard Williams",     # Day 115 DE  (#99)
+        "Jerry Jeudy",          # Day 116 WR  (#82)
+        # ---- Day 117〜124: 2シーズン以下の2024ルーキー（MIN_SEASONS=2 対応） ----
+        "Brock Bowers",         # Day 117 TE  (#24)
+        "Jayden Daniels",       # Day 118 QB  (#21)
+        "Brian Thomas Jr.",     # Day 119 WR  (#61)
+        "Quinyon Mitchell",     # Day 120 CB  (#49)
+        "Bo Nix",               # Day 121 QB  (#64)
+        "Malik Nabers",         # Day 122 WR  (#67)
+        "Cooper DeJean",        # Day 123 CB  (#60)
+        "Ladd McConkey",        # Day 124 WR  (#100)
     ]
 
     # 開始日から1日ずつ日付を割り当て
